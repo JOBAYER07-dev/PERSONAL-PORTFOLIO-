@@ -1,14 +1,36 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const info = [
-  { label: "Name", value: "JOBAYER HOSEN" },
-  { label: "Location", value: "DHAKA, BANGLADESH" },
-  { label: "Institute", value: "Bhola Polytechnic Institute" },
-  { label: "Focus", value: "Frontend / Full-Stack Dev" },
-  { label: "Currently Learning", value: "Next.js + MongoDB", accent: true },
-  { label: "LinkedIn", value: "linkedin.com/in/jobayer", link: "https://linkedin.com/in/" },
+  { label: 'Name', value: 'Jobayer Hosen' },
+  { label: 'Location', value: 'Dhaka, Bangladesh' },
+  { label: 'Institute', value: 'Bhola Polytechnic Institute' },
+  { label: 'Focus', value: 'Frontend / Full-Stack Dev' },
+  { label: 'Currently Learning', value: 'Next.js + MongoDB', accent: true },
+  {
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/jobayer-dev',
+    link: 'https://www.linkedin.com/in/jobayer-dev/',
+  },
+];
+
+const education = [
+  {
+    year: '2023 — Present',
+    degree: 'Diploma in Engineering (Web Technology)',
+    school: 'Bhola Polytechnic Institute',
+  },
+  {
+    year: '2024',
+    degree: 'MERN Stack Web Development',
+    school: 'BD Calling Academy',
+  },
+  {
+    year: '2023 — 2024',
+    degree: 'Frontend & Full-Stack Development',
+    school: 'Programming Hero',
+  },
 ];
 
 export default function AboutPage() {
@@ -37,24 +59,67 @@ export default function AboutPage() {
           className="space-y-5 text-base-content/60 leading-relaxed"
         >
           <p>
-            I’m Jobayer — from Bhola, Bangladesh. I’m studying Web Development
-            at Bhola Polytechnic Institute.
+            I'm Jobayer Hosen — a passionate React & Next.js developer from
+            Bhola, Bangladesh. My journey into web development started with a
+            simple curiosity about how websites are built, and that curiosity
+            quickly turned into a full-on passion.
           </p>
           <p>
-            I’ve followed Programming Hero’s structured curriculum, starting
-            from HTML/CSS and progressing to React and Next.js. I’m gaining
-            practical experience by building real projects.
+            I completed a full MERN Stack Web Development course at{' '}
+            <span className="text-base-content font-medium">
+              BD Calling Academy
+            </span>
+            , followed by a structured Frontend & Full-Stack program at{' '}
+            <span className="text-base-content font-medium">
+              Programming Hero
+            </span>
+            . I'm currently studying Web Technology at Bhola Polytechnic
+            Institute and continue to build real-world projects to sharpen my
+            skills.
           </p>
           <p>
-            Besides tech, I…{' '}
-            <span className="text-base-content font-medium">REEZ</span>I also
-            run a men’s clothing brand, where I handle design, marketing, and
-            customer communication.
+            I enjoy building things that live on the internet — clean UI
+            components, smooth animations, and full-stack applications that
+            solve real problems. I love turning ideas into working products.
           </p>
           <p>
-            My goal is to become a skilled full-stack developer and build
-            meaningful products.
+            Outside of programming, I run{' '}
+            <span className="text-base-content font-medium">REEZ</span> — a
+            men's clothing brand where I handle design, marketing, and customer
+            communication. I'm also into football, photography, and exploring
+            new ideas.
           </p>
+          <p>
+            My goal is to become a skilled full-stack developer and eventually
+            build products that make a real difference in people's lives.
+          </p>
+
+          {/* Education */}
+          <div className="mt-10">
+            <h3 className="font-[family-name:var(--font-syne)] font-bold text-2xl text-base-content mb-6">
+              Education
+            </h3>
+            <div className="space-y-3">
+              {education.map(e => (
+                <div
+                  key={e.degree}
+                  className="flex gap-4 p-4 bg-base-200 rounded-xl border border-base-300"
+                >
+                  <span className="text-[#c8f04e] text-xs mt-0.5 whitespace-nowrap font-medium">
+                    {e.year}
+                  </span>
+                  <div>
+                    <div className="font-medium text-sm text-base-content">
+                      {e.degree}
+                    </div>
+                    <div className="text-base-content/40 text-xs mt-0.5">
+                      {e.school}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
         {/* Right — info table */}
@@ -90,6 +155,26 @@ export default function AboutPage() {
               )}
             </div>
           ))}
+
+          {/* Experience */}
+          <div className="pt-6">
+            <h3 className="font-[family-name:var(--font-syne)] font-bold text-xl text-base-content mb-4">
+              Experience
+            </h3>
+            <div className="p-4 bg-base-200 rounded-xl border border-base-300">
+              <div className="flex justify-between items-start mb-1">
+                <span className="font-medium text-sm">Founder & Manager</span>
+                <span className="text-[#c8f04e] text-xs">2023 — Present</span>
+              </div>
+              <div className="text-base-content/40 text-xs mb-2">
+                REEZ — Men's Clothing Brand
+              </div>
+              <p className="text-base-content/50 text-xs leading-relaxed">
+                Managing brand design, Facebook & Instagram marketing, customer
+                communication, and ad campaign strategy.
+              </p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

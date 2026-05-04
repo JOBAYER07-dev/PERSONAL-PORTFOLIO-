@@ -13,6 +13,13 @@ const fadeUp = {
   }),
 };
 
+const socials = [
+  { label: 'GitHub', href: 'https://github.com/JOBAYER07-dev' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jobayer-dev/' },
+  { label: 'Facebook', href: 'https://www.facebook.com/jobayer.hosen.juba' },
+  { label: 'Instagram', href: 'https://www.instagram.com/jobayer__4' },
+];
+
 export default function Hero() {
   return (
     <section className="min-h-screen grid md:grid-cols-2 items-center px-6 md:px-16 pt-20 gap-12 relative overflow-hidden">
@@ -21,7 +28,7 @@ export default function Hero() {
 
       {/* LEFT */}
       <div>
-        {/* eyebrow */}
+        {/* Eyebrow */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -66,7 +73,7 @@ export default function Hero() {
           initial="hidden"
           animate="show"
           custom={3}
-          className="flex flex-wrap gap-4 mb-12"
+          className="flex flex-wrap gap-4 mb-10"
         >
           <Link
             href="/projects"
@@ -77,6 +84,34 @@ export default function Hero() {
           <Link href="/contact" className="btn btn-outline rounded-full px-8">
             Let's Talk →
           </Link>
+          <a
+            href="/resume.pdf"
+            download
+            className="btn rounded-full border border-[#c8f04e] text-[#c8f04e] bg-transparent hover:bg-[#c8f04e]/10 px-8"
+          >
+            Download CV ↓
+          </a>
+        </motion.div>
+
+        {/* Social Links */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate="show"
+          custom={4}
+          className="flex flex-wrap gap-2 mb-10"
+        >
+          {socials.map(({ label, href }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-sm btn-outline rounded-full hover:border-[#c8f04e]/50 hover:text-[#c8f04e] transition-all"
+            >
+              {label}
+            </a>
+          ))}
         </motion.div>
 
         {/* Stats */}
@@ -84,7 +119,7 @@ export default function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          custom={4}
+          custom={5}
           className="flex gap-10 pt-8 border-t border-base-300"
         >
           {[
@@ -109,13 +144,11 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
         className="hidden md:flex justify-center items-center relative"
       >
-        {/* Badge top-left */}
         <div className="absolute -top-3 -left-8 z-10 flex items-center gap-2 bg-base-200 border border-base-300 rounded-xl px-3 py-2 text-sm font-medium shadow-lg">
           <span className="w-2 h-2 rounded-full bg-[#c8f04e]" />
           React Developer
         </div>
 
-        {/* Avatar with photo */}
         <div className="w-80 h-96 rounded-3xl border border-base-300 relative overflow-hidden">
           <Image
             src="/avatar.png"
@@ -126,7 +159,6 @@ export default function Hero() {
           />
         </div>
 
-        {/* Badge bottom-right */}
         <div className="absolute -bottom-3 -right-8 flex items-center gap-2 bg-base-200 border border-base-300 rounded-xl px-3 py-2 text-sm font-medium shadow-lg">
           <span className="w-2 h-2 rounded-full bg-[#c8f04e] animate-pulse" />
           Next.js Developer

@@ -1,35 +1,57 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
-// 🔑 Replace these with your actual EmailJS credentials
-// Sign up at https://emailjs.com → create service, template, get public key
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+
+const contactLinks = [
+  {
+    label: 'jobayerhosen045@gmail.com',
+    href: 'mailto:jobayerhosen045@gmail.com',
+    icon: '✉',
+  },
+  { label: '+880 1861961550', href: 'tel:+8801XXXXXXXXX', icon: '📞' },
+  { label: 'GitHub', href: 'https://github.com/JOBAYER07-dev', icon: 'GH' },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/jobayer-dev/',
+    icon: 'LI',
+  },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/jobayer.hosen.juba',
+    icon: 'FB',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/jobayer__4',
+    icon: 'IG',
+  },
+];
 
 export default function ContactPage() {
   const formRef = useRef(null);
-  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [status, setStatus] = useState('idle');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setStatus("sending");
-
+    setStatus('sending');
     try {
       await emailjs.sendForm(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         formRef.current,
-        EMAILJS_PUBLIC_KEY
+        EMAILJS_PUBLIC_KEY,
       );
-      setStatus("success");
+      setStatus('success');
       formRef.current.reset();
     } catch (err) {
       console.error(err);
-      setStatus("error");
+      setStatus('error');
     }
   };
 
@@ -55,26 +77,14 @@ export default function ContactPage() {
         </p>
       </motion.div>
 
-      {/* Quick links */}
+      {/* Contact links */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
         className="flex justify-center gap-3 flex-wrap mb-14"
       >
-        {[
-          {
-            label: 'GitHub',
-            href: 'https://github.com/JOBAYER07-dev',
-            icon: 'GH',
-          },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/', icon: 'LI' },
-          {
-            label: 'Email',
-            href: 'mailto:jobayerhosen045@gmail.com',
-            icon: '✉',
-          },
-        ].map(({ label, href, icon }) => (
+        {contactLinks.map(({ label, href, icon }) => (
           <a
             key={label}
             href={href}
@@ -171,12 +181,12 @@ export default function ContactPage() {
 
         {status === 'success' && (
           <p className="text-center text-sm text-[#c8f04e]">
-            ✓ Message sent! শীঘ্রই reply করব।
+            ✓ Message sent! I'll reply shortly.
           </p>
         )}
         {status === 'error' && (
           <p className="text-center text-sm text-error">
-            Something went wrong. আবার try করো।
+            Something went wrong. Please try again.
           </p>
         )}
       </motion.form>

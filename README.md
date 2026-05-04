@@ -151,12 +151,7 @@ portfolio/
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JOBAYER07-dev)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/reez_wear)
 
----
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Designed & Built by <strong>Jobayer Ahmed</strong> 🇧🇩</p>
+<p align="center">Designed & Built by <strong>Jobayer Hosen</strong> 🇧🇩</p>

@@ -33,6 +33,24 @@ const fadeUp = {
         };
     }
 };
+const socials = [
+    {
+        label: 'GitHub',
+        href: 'https://github.com/JOBAYER07-dev'
+    },
+    {
+        label: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/jobayer-dev/'
+    },
+    {
+        label: 'Facebook',
+        href: 'https://www.facebook.com/jobayer.hosen.juba'
+    },
+    {
+        label: 'Instagram',
+        href: 'https://www.instagram.com/jobayer__4'
+    }
+];
 function Hero() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "min-h-screen grid md:grid-cols-2 items-center px-6 md:px-16 pt-20 gap-12 relative overflow-hidden",
@@ -41,7 +59,7 @@ function Hero() {
                 className: "absolute w-[500px] h-[500px] rounded-full bg-[#c8f04e]/5 blur-[100px] top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/components/Hero.jsx",
-                lineNumber: 20,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -57,14 +75,14 @@ function Hero() {
                                 className: "w-1.5 h-1.5 rounded-full bg-[#c8f04e] animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 32,
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, this),
                             "Available for work"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 25,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -77,7 +95,7 @@ function Hero() {
                             "React &",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 45,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -85,19 +103,19 @@ function Hero() {
                                 children: "Next.js"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 46,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 47,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, this),
                             "Developer"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 37,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -109,7 +127,7 @@ function Hero() {
                         children: "I build beautiful, fast, and user-friendly web experiences using React and Next.js. Based in Bangladesh, delivering globally."
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 52,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -117,7 +135,7 @@ function Hero() {
                         initial: "hidden",
                         animate: "show",
                         custom: 3,
-                        className: "flex flex-wrap gap-4 mb-12",
+                        className: "flex flex-wrap gap-4 mb-10",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/projects",
@@ -125,7 +143,7 @@ function Hero() {
                                 children: "View Projects"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 71,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -134,13 +152,23 @@ function Hero() {
                                 children: "Let's Talk →"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 77,
+                                lineNumber: 84,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "/resume.pdf",
+                                download: true,
+                                className: "btn rounded-full border border-[#c8f04e] text-[#c8f04e] bg-transparent hover:bg-[#c8f04e]/10 px-8",
+                                children: "Download CV ↓"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Hero.jsx",
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 64,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -148,6 +176,31 @@ function Hero() {
                         initial: "hidden",
                         animate: "show",
                         custom: 4,
+                        className: "flex flex-wrap gap-2 mb-10",
+                        children: socials.map((param)=>{
+                            let { label, href } = param;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: href,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "btn btn-sm btn-outline rounded-full hover:border-[#c8f04e]/50 hover:text-[#c8f04e] transition-all",
+                                children: label
+                            }, label, false, {
+                                fileName: "[project]/components/Hero.jsx",
+                                lineNumber: 105,
+                                columnNumber: 13
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.jsx",
+                        lineNumber: 97,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        variants: fadeUp,
+                        initial: "hidden",
+                        animate: "show",
+                        custom: 5,
                         className: "flex gap-10 pt-8 border-t border-base-300",
                         children: [
                             {
@@ -171,7 +224,7 @@ function Hero() {
                                         children: num
                                     }, void 0, false, {
                                         fileName: "[project]/components/Hero.jsx",
-                                        lineNumber: 96,
+                                        lineNumber: 131,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -179,25 +232,25 @@ function Hero() {
                                         children: label
                                     }, void 0, false, {
                                         fileName: "[project]/components/Hero.jsx",
-                                        lineNumber: 99,
+                                        lineNumber: 134,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, label, true, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 95,
+                                lineNumber: 130,
                                 columnNumber: 13
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 83,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Hero.jsx",
-                lineNumber: 23,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -223,14 +276,14 @@ function Hero() {
                                 className: "w-2 h-2 rounded-full bg-[#c8f04e]"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 114,
+                                lineNumber: 148,
                                 columnNumber: 11
                             }, this),
                             "React Developer"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 113,
+                        lineNumber: 147,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -243,12 +296,12 @@ function Hero() {
                             priority: true
                         }, void 0, false, {
                             fileName: "[project]/components/Hero.jsx",
-                            lineNumber: 120,
+                            lineNumber: 153,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 119,
+                        lineNumber: 152,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -258,26 +311,26 @@ function Hero() {
                                 className: "w-2 h-2 rounded-full bg-[#c8f04e] animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
-                                lineNumber: 131,
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, this),
                             "Next.js Developer"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.jsx",
-                        lineNumber: 130,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Hero.jsx",
-                lineNumber: 106,
+                lineNumber: 141,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Hero.jsx",
-        lineNumber: 18,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
