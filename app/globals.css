@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light, dark;
+}
+
+@layer base {
+  :root {
+    --accent: #c8f04e;
+    --accent-hover: #a8d93e;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+  }
+}
+
+/* Custom accent utilities */
+@layer utilities {
+  .text-accent-lime { color: var(--accent); }
+  .bg-accent-lime { background-color: var(--accent); }
+  .border-accent-lime { border-color: var(--accent); }
+}
