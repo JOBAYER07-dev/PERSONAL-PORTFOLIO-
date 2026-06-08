@@ -14,29 +14,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 const projects = [
     {
         num: '01',
-        name: 'DigiTools',
-        desc: 'React-based digital tools marketplace with cart management, toast notifications and smooth UX।',
+        name: '-MediQueue ',
+        desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
         stack: [
-            'React 19',
-            'Tailwind CSS',
-            'DaisyUI',
-            'Vite'
+            'NEXT JS',
+            'Firebase ',
+            'React Router',
+            'Context API',
+            'MongoDB',
+            'JWT Authentication',
+            'Tailwind CSS'
         ],
-        live: 'https://jobayer-digitool.netlify.app',
-        code: 'https://github.com/'
+        live: 'medi-queue-ecru.vercel.app',
+        code: 'https://github.com/JOBAYER07-dev/-MediQueue'
     },
     {
         num: '02',
-        name: 'Keen Keeper',
-        desc: 'Friend relationship manager with React Router v6, Context API and lazy loading।',
+        name: 'SkillSphere',
+        desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
         stack: [
-            'React',
-            'React Router v6',
-            'Context API',
+            'Next.js',
+            'BetterAuth',
+            'MongoDB Atlas',
             'DaisyUI'
         ],
-        live: 'https://keenkeaper.netlify.app/',
-        code: 'https://github.com/JOBAYER07-dev/KinKeeper'
+        live: 'https://skill-sphere-sable.vercel.app/',
+        code: 'https://github.com/JOBAYER07-dev/SkillSphere'
     },
     {
         num: '03',
@@ -77,6 +80,32 @@ const projects = [
     },
     {
         num: '06',
+        name: 'Keen Keeper',
+        desc: 'Friend relationship manager with React Router v6, Context API and lazy loading।',
+        stack: [
+            'React',
+            'React Router v6',
+            'Context API',
+            'DaisyUI'
+        ],
+        live: 'https://keenkeaper.netlify.app/',
+        code: 'https://github.com/JOBAYER07-dev/KinKeeper'
+    },
+    {
+        num: '07',
+        name: 'DigiTools',
+        desc: 'React-based digital tools marketplace with cart management, toast notifications and smooth UX।',
+        stack: [
+            'React 19',
+            'Tailwind CSS',
+            'DaisyUI',
+            'Vite'
+        ],
+        live: 'https://jobayer-digitool.netlify.app',
+        code: 'https://github.com/JOBAYER07-dev/DigiTools'
+    },
+    {
+        num: '08',
         name: 'Coming Soon...',
         desc: 'I’m currently working on a full-stack project using Next.js',
         stack: [
@@ -112,7 +141,7 @@ function ProjectsPage() {
                         children: "My Work"
                     }, void 0, false, {
                         fileName: "[project]/app/projects/page.jsx",
-                        lineNumber: 66,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -120,13 +149,13 @@ function ProjectsPage() {
                         children: "All Projects"
                     }, void 0, false, {
                         fileName: "[project]/app/projects/page.jsx",
-                        lineNumber: 69,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/projects/page.jsx",
-                lineNumber: 60,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -152,7 +181,7 @@ function ProjectsPage() {
                                 className: "absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 87,
+                                lineNumber: 111,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -163,13 +192,13 @@ function ProjectsPage() {
                                         className: "flex-1 h-px bg-base-300"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 91,
+                                        lineNumber: 115,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 89,
+                                lineNumber: 113,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -177,7 +206,7 @@ function ProjectsPage() {
                                 children: name
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 94,
+                                lineNumber: 118,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -185,7 +214,7 @@ function ProjectsPage() {
                                 children: desc
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 101,
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -195,12 +224,12 @@ function ProjectsPage() {
                                         children: t
                                     }, t, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 111,
+                                        lineNumber: 135,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 109,
+                                lineNumber: 133,
                                 columnNumber: 13
                             }, this),
                             !upcoming && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -214,7 +243,7 @@ function ProjectsPage() {
                                         children: "Live →"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 122,
+                                        lineNumber: 146,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -225,31 +254,31 @@ function ProjectsPage() {
                                         children: "Code →"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 130,
+                                        lineNumber: 154,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 121,
+                                lineNumber: 145,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, num, true, {
                         fileName: "[project]/app/projects/page.jsx",
-                        lineNumber: 76,
+                        lineNumber: 100,
                         columnNumber: 11
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/app/projects/page.jsx",
-                lineNumber: 74,
+                lineNumber: 98,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/projects/page.jsx",
-        lineNumber: 59,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }

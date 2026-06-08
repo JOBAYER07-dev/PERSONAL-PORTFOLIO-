@@ -156,7 +156,7 @@ function Hero() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "/resume.pdf",
+                                href: "/jobayer-resume.pdf",
                                 download: true,
                                 className: "btn rounded-full border border-[#c8f04e] text-[#c8f04e] bg-transparent hover:bg-[#c8f04e]/10 px-8",
                                 children: "Download CV ↓"
@@ -681,43 +681,46 @@ var _s = __turbopack_context__.k.signature();
 ;
 const featured = [
     {
-        num: "01",
-        name: "DigiTools",
-        desc: "React-based digital tools marketplace with cart management, toast notifications এবং smooth UX।",
+        num: '01',
+        name: '-MediQueue ',
+        desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
         stack: [
-            "React 19",
-            "Tailwind CSS",
-            "DaisyUI",
-            "Vite"
+            'NEXT JS',
+            'Firebase ',
+            'React Router',
+            'Context API',
+            'MongoDB',
+            'JWT Authentication',
+            'Tailwind CSS'
         ],
-        live: "https://jobayer-digitool.netlify.app",
-        code: "https://github.com/"
+        live: 'medi-queue-ecru.vercel.app',
+        code: 'https://github.com/JOBAYER07-dev/-MediQueue'
     },
     {
-        num: "02",
-        name: "Keen Keeper",
-        desc: "Friend relationship manager with React Router v6, Context API এবং lazy loading।",
+        num: '02',
+        name: 'SkillSphere',
+        desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
         stack: [
-            "React",
-            "React Router v6",
-            "Context API",
-            "DaisyUI"
+            'Next.js',
+            'BetterAuth',
+            'MongoDB Atlas',
+            'DaisyUI'
         ],
-        live: "#",
-        code: "https://github.com/"
+        live: 'https://skill-sphere-sable.vercel.app/',
+        code: 'https://github.com/JOBAYER07-dev/SkillSphere'
     },
     {
-        num: "03",
-        name: "GitHub Issues Tracker",
-        desc: "Vanilla JS app with real-time search, priority tags, status filter এবং issue detail modal।",
+        num: '03',
+        name: 'GitHub Issues Tracker',
+        desc: 'Vanilla JS app with real-time search, priority tags, status filter এবং issue detail modal।',
         stack: [
-            "HTML",
-            "Tailwind CSS",
-            "JavaScript",
-            "REST API"
+            'HTML',
+            'Tailwind CSS',
+            'JavaScript',
+            'REST API'
         ],
-        live: "#",
-        code: "https://github.com/"
+        live: '#',
+        code: 'https://github.com/'
     }
 ];
 function FeaturedProjects() {
@@ -752,7 +755,7 @@ function FeaturedProjects() {
                                 children: "My Work"
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 47,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -761,20 +764,20 @@ function FeaturedProjects() {
                                     "Featured",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 52,
+                                        lineNumber: 60,
                                         columnNumber: 13
                                     }, this),
                                     "Projects"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 50,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/FeaturedProjects.jsx",
-                        lineNumber: 42,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -783,13 +786,13 @@ function FeaturedProjects() {
                         children: "All Projects →"
                     }, void 0, false, {
                         fileName: "[project]/components/FeaturedProjects.jsx",
-                        lineNumber: 56,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/FeaturedProjects.jsx",
-                lineNumber: 41,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -815,7 +818,7 @@ function FeaturedProjects() {
                                 className: "absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 71,
+                                lineNumber: 79,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -826,13 +829,13 @@ function FeaturedProjects() {
                                         className: "flex-1 h-px bg-base-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 75,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 73,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -840,7 +843,7 @@ function FeaturedProjects() {
                                 children: name
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 78,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -848,7 +851,7 @@ function FeaturedProjects() {
                                 children: desc
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 81,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -858,12 +861,12 @@ function FeaturedProjects() {
                                         children: t
                                     }, t, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 87,
+                                        lineNumber: 95,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 85,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -877,7 +880,7 @@ function FeaturedProjects() {
                                         children: "Live →"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 97,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -888,31 +891,31 @@ function FeaturedProjects() {
                                         children: "Code →"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 105,
+                                        lineNumber: 113,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 96,
+                                lineNumber: 104,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, num, true, {
                         fileName: "[project]/components/FeaturedProjects.jsx",
-                        lineNumber: 63,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/components/FeaturedProjects.jsx",
-                lineNumber: 61,
+                lineNumber: 69,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/FeaturedProjects.jsx",
-        lineNumber: 40,
+        lineNumber: 48,
         columnNumber: 5
     }, this);
 }

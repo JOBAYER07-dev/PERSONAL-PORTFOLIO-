@@ -17,17 +17,17 @@ const info = [
 
 const education = [
   {
-    year: '2023 — Present',
+    year: '2022 — Present',
     degree: 'Diploma in Engineering (Web Technology)',
     school: 'Bhola Polytechnic Institute',
   },
   {
-    year: '2024',
+    year: '2025',
     degree: 'MERN Stack Web Development',
     school: 'BD Calling Academy',
   },
   {
-    year: '2023 — 2024',
+    year: '2026 — running',
     degree: 'Frontend & Full-Stack Development',
     school: 'Programming Hero',
   },
@@ -84,7 +84,7 @@ export default function AboutPage() {
           </p>
           <p>
             Outside of programming, I run{' '}
-            <span className="text-base-content font-medium">REEZ</span> — a
+            <span className="text-base-content font-medium">REEZ_WEAR</span> — a
             men's clothing brand where I handle design, marketing, and customer
             communication. I'm also into football, photography, and exploring
             new ideas.
@@ -164,7 +164,7 @@ export default function AboutPage() {
             <div className="p-4 bg-base-200 rounded-xl border border-base-300">
               <div className="flex justify-between items-start mb-1">
                 <span className="font-medium text-sm">Founder & Manager</span>
-                <span className="text-[#c8f04e] text-xs">2023 — Present</span>
+                <span className="text-[#c8f04e] text-xs">2025 — Present</span>
               </div>
               <div className="text-base-content/40 text-xs mb-2">
                 REEZ — Men's Clothing Brand

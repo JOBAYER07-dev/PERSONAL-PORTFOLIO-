@@ -85,7 +85,7 @@ export default function Hero() {
             Let's Talk →
           </Link>
           <a
-            href="/resume.pdf"
+            href="/jobayer-resume.pdf"
             download
             className="btn rounded-full border border-[#c8f04e] text-[#c8f04e] bg-transparent hover:bg-[#c8f04e]/10 px-8"
           >
