@@ -159,7 +159,7 @@ function Hero() {
                                 href: "/jobayer-resume.pdf",
                                 download: true,
                                 className: "btn rounded-full border border-[#c8f04e] text-[#c8f04e] bg-transparent hover:bg-[#c8f04e]/10 px-8",
-                                children: "Download CV ↓"
+                                children: "Download Resume ↓"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.jsx",
                                 lineNumber: 87,
@@ -204,15 +204,15 @@ function Hero() {
                         className: "flex gap-10 pt-8 border-t border-base-300",
                         children: [
                             {
-                                num: '5+',
+                                num: '7+',
                                 label: 'Projects Built'
                             },
                             {
-                                num: '2+',
+                                num: '1+',
                                 label: 'Years Learning'
                             },
                             {
-                                num: '10+',
+                                num: '20+',
                                 label: 'Tech Stack'
                             }
                         ].map((param)=>{
@@ -290,7 +290,7 @@ function Hero() {
                         className: "w-80 h-96 rounded-3xl border border-base-300 relative overflow-hidden",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/avatar.png",
-                            alt: "Jobayer Ahmed",
+                            alt: "Jobayer Hosen",
                             fill: true,
                             className: "object-cover object-top",
                             priority: true
@@ -674,30 +674,46 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
-"use client";
+'use client';
 ;
 ;
 ;
 ;
 const featured = [
     {
+        id: 'ticketbari',
         num: '01',
-        name: '-MediQueue ',
-        desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
+        name: 'TicketBari',
+        desc: 'A full-stack transport ticket booking platform with role-based access control, secure payments, and real-time seat management for Users, Vendors, and Admins.',
         stack: [
-            'NEXT JS',
-            'Firebase ',
-            'React Router',
-            'Context API',
-            'MongoDB',
-            'JWT Authentication',
+            'Next.js 15',
+            'Express.js',
+            'MongoDB Atlas',
+            'JWT',
+            'Stripe',
             'Tailwind CSS'
         ],
-        live: 'medi-queue-ecru.vercel.app',
+        live: 'https://ticket-bari-client-one.vercel.app/',
+        code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-CLIENT'
+    },
+    {
+        id: 'mediqueue',
+        num: '02',
+        name: 'MediQueue',
+        desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
+        stack: [
+            'Next.js',
+            'Firebase',
+            'MongoDB',
+            'JWT',
+            'Tailwind CSS'
+        ],
+        live: 'https://medi-queue-ecru.vercel.app/',
         code: 'https://github.com/JOBAYER07-dev/-MediQueue'
     },
     {
-        num: '02',
+        id: 'skillsphere',
+        num: '03',
         name: 'SkillSphere',
         desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
         stack: [
@@ -708,19 +724,6 @@ const featured = [
         ],
         live: 'https://skill-sphere-sable.vercel.app/',
         code: 'https://github.com/JOBAYER07-dev/SkillSphere'
-    },
-    {
-        num: '03',
-        name: 'GitHub Issues Tracker',
-        desc: 'Vanilla JS app with real-time search, priority tags, status filter এবং issue detail modal।',
-        stack: [
-            'HTML',
-            'Tailwind CSS',
-            'JavaScript',
-            'REST API'
-        ],
-        live: '#',
-        code: 'https://github.com/'
     }
 ];
 function FeaturedProjects() {
@@ -728,7 +731,7 @@ function FeaturedProjects() {
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const inView = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useInView"])(ref, {
         once: true,
-        margin: "-80px"
+        margin: '-80px'
     });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-24 px-6 md:px-16",
@@ -755,7 +758,7 @@ function FeaturedProjects() {
                                 children: "My Work"
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 55,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -764,20 +767,20 @@ function FeaturedProjects() {
                                     "Featured",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 60,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this),
                                     "Projects"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 58,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/FeaturedProjects.jsx",
-                        lineNumber: 50,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -786,19 +789,19 @@ function FeaturedProjects() {
                         children: "All Projects →"
                     }, void 0, false, {
                         fileName: "[project]/components/FeaturedProjects.jsx",
-                        lineNumber: 64,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/FeaturedProjects.jsx",
-                lineNumber: 49,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid md:grid-cols-3 gap-5",
                 children: featured.map((param, i)=>{
-                    let { num, name, desc, stack, live, code } = param;
+                    let { id, num, name, desc, stack, live, code } = param;
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
                             opacity: 0,
@@ -812,13 +815,13 @@ function FeaturedProjects() {
                             duration: 0.6,
                             delay: i * 0.12
                         },
-                        className: "group relative bg-base-200 border border-base-300 rounded-2xl p-6 hover:-translate-y-1 hover:border-[#c8f04e]/25 transition-all duration-300 overflow-hidden",
+                        className: "group relative bg-base-200 border border-base-300 rounded-2xl p-6 hover:-translate-y-1 hover:border-[#c8f04e]/25 transition-all duration-300 overflow-hidden flex flex-col",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 79,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -829,13 +832,13 @@ function FeaturedProjects() {
                                         className: "flex-1 h-px bg-base-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 83,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 81,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -843,15 +846,15 @@ function FeaturedProjects() {
                                 children: name
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 86,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-base-content/50 text-sm leading-relaxed mb-5",
+                                className: "text-base-content/50 text-sm leading-relaxed mb-5 flex-1",
                                 children: desc
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 89,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -861,61 +864,70 @@ function FeaturedProjects() {
                                         children: t
                                     }, t, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 95,
+                                        lineNumber: 97,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 93,
+                                lineNumber: 95,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-4",
+                                className: "flex gap-2 flex-wrap",
                                 children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/projects/".concat(id),
+                                        className: "btn btn-sm rounded-full bg-[#c8f04e] text-black border-none hover:opacity-85",
+                                        children: "View Details →"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/FeaturedProjects.jsx",
+                                        lineNumber: 108,
+                                        columnNumber: 15
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: live,
                                         target: "_blank",
                                         rel: "noopener noreferrer",
-                                        className: "text-sm text-[#c8f04e] hover:gap-2 flex items-center gap-1 transition-all",
-                                        children: "Live →"
+                                        className: "btn btn-sm btn-outline rounded-full text-[#c8f04e] border-[#c8f04e]/30 hover:border-[#c8f04e]",
+                                        children: "Live"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 105,
+                                        lineNumber: 114,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: code,
                                         target: "_blank",
                                         rel: "noopener noreferrer",
-                                        className: "text-sm text-base-content/50 hover:text-base-content flex items-center gap-1 transition-colors",
-                                        children: "Code →"
+                                        className: "btn btn-sm btn-outline rounded-full",
+                                        children: "Code"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FeaturedProjects.jsx",
-                                        lineNumber: 113,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProjects.jsx",
-                                lineNumber: 104,
+                                lineNumber: 107,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, num, true, {
                         fileName: "[project]/components/FeaturedProjects.jsx",
-                        lineNumber: 71,
+                        lineNumber: 73,
                         columnNumber: 11
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/components/FeaturedProjects.jsx",
-                lineNumber: 69,
+                lineNumber: 71,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/FeaturedProjects.jsx",
-        lineNumber: 48,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 }

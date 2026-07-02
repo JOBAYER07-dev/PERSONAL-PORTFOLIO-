@@ -1,48 +1,50 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
-import Link from "next/link";
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+import Link from 'next/link';
 
 const featured = [
   {
+    id: 'ticketbari',
     num: '01',
-    name: '-MediQueue ',
-    desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
+    name: 'TicketBari',
+    desc: 'A full-stack transport ticket booking platform with role-based access control, secure payments, and real-time seat management for Users, Vendors, and Admins.',
     stack: [
-      'NEXT JS',
-      'Firebase ',
-      'React Router',
-      'Context API',
-      'MongoDB',
-      'JWT Authentication',
+      'Next.js 15',
+      'Express.js',
+      'MongoDB Atlas',
+      'JWT',
+      'Stripe',
       'Tailwind CSS',
     ],
-    live: 'medi-queue-ecru.vercel.app',
+    live: 'https://ticket-bari-client-one.vercel.app/',
+    code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-CLIENT',
+  },
+  {
+    id: 'mediqueue',
+    num: '02',
+    name: 'MediQueue',
+    desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
+    stack: ['Next.js', 'Firebase', 'MongoDB', 'JWT', 'Tailwind CSS'],
+    live: 'https://medi-queue-ecru.vercel.app/',
     code: 'https://github.com/JOBAYER07-dev/-MediQueue',
   },
   {
-    num: '02',
+    id: 'skillsphere',
+    num: '03',
     name: 'SkillSphere',
     desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
     stack: ['Next.js', 'BetterAuth', 'MongoDB Atlas', 'DaisyUI'],
     live: 'https://skill-sphere-sable.vercel.app/',
     code: 'https://github.com/JOBAYER07-dev/SkillSphere',
   },
-  {
-    num: '03',
-    name: 'GitHub Issues Tracker',
-    desc: 'Vanilla JS app with real-time search, priority tags, status filter এবং issue detail modal।',
-    stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'REST API'],
-    live: '#',
-    code: 'https://github.com/',
-  },
 ];
 
 export default function FeaturedProjects() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
     <section className="py-24 px-6 md:px-16" ref={ref}>
@@ -67,13 +69,13 @@ export default function FeaturedProjects() {
       </div>
 
       <div className="grid md:grid-cols-3 gap-5">
-        {featured.map(({ num, name, desc, stack, live, code }, i) => (
+        {featured.map(({ id, num, name, desc, stack, live, code }, i) => (
           <motion.div
             key={num}
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: i * 0.12 }}
-            className="group relative bg-base-200 border border-base-300 rounded-2xl p-6 hover:-translate-y-1 hover:border-[#c8f04e]/25 transition-all duration-300 overflow-hidden"
+            className="group relative bg-base-200 border border-base-300 rounded-2xl p-6 hover:-translate-y-1 hover:border-[#c8f04e]/25 transition-all duration-300 overflow-hidden flex flex-col"
           >
             {/* top accent bar on hover */}
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
@@ -86,12 +88,12 @@ export default function FeaturedProjects() {
             <h3 className="font-[family-name:var(--font-syne)] font-bold text-xl mb-2">
               {name}
             </h3>
-            <p className="text-base-content/50 text-sm leading-relaxed mb-5">
+            <p className="text-base-content/50 text-sm leading-relaxed mb-5 flex-1">
               {desc}
             </p>
 
             <div className="flex flex-wrap gap-1.5 mb-6">
-              {stack.map((t) => (
+              {stack.map(t => (
                 <span
                   key={t}
                   className="text-xs bg-base-300 text-base-content/60 px-2.5 py-1 rounded-full"
@@ -101,22 +103,29 @@ export default function FeaturedProjects() {
               ))}
             </div>
 
-            <div className="flex gap-4">
+            {/* Buttons */}
+            <div className="flex gap-2 flex-wrap">
+              <Link
+                href={`/projects/${id}`}
+                className="btn btn-sm rounded-full bg-[#c8f04e] text-black border-none hover:opacity-85"
+              >
+                View Details →
+              </Link>
               <a
                 href={live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-[#c8f04e] hover:gap-2 flex items-center gap-1 transition-all"
+                className="btn btn-sm btn-outline rounded-full text-[#c8f04e] border-[#c8f04e]/30 hover:border-[#c8f04e]"
               >
-                Live →
+                Live
               </a>
               <a
                 href={code}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-base-content/50 hover:text-base-content flex items-center gap-1 transition-colors"
+                className="btn btn-sm btn-outline rounded-full"
               >
-                Code →
+                Code
               </a>
             </div>
           </motion.div>

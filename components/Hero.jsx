@@ -89,7 +89,7 @@ export default function Hero() {
             download
             className="btn rounded-full border border-[#c8f04e] text-[#c8f04e] bg-transparent hover:bg-[#c8f04e]/10 px-8"
           >
-            Download CV ↓
+            Download Resume ↓
           </a>
         </motion.div>
 
@@ -123,9 +123,9 @@ export default function Hero() {
           className="flex gap-10 pt-8 border-t border-base-300"
         >
           {[
-            { num: '5+', label: 'Projects Built' },
-            { num: '2+', label: 'Years Learning' },
-            { num: '10+', label: 'Tech Stack' },
+            { num: '7+', label: 'Projects Built' },
+            { num: '1+', label: 'Years Learning' },
+            { num: '20+', label: 'Tech Stack' },
           ].map(({ num, label }) => (
             <div key={label}>
               <div className="font-[family-name:var(--font-syne)] text-3xl font-bold text-accent-lime">
@@ -152,7 +152,7 @@ export default function Hero() {
         <div className="w-80 h-96 rounded-3xl border border-base-300 relative overflow-hidden">
           <Image
             src="/avatar.png"
-            alt="Jobayer Ahmed"
+            alt="Jobayer Hosen"
             fill
             className="object-cover object-top"
             priority

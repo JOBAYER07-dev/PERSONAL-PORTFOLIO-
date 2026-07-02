@@ -16,11 +16,12 @@ const syne = Syne({
 });
 
 export const metadata = {
-  title: "JOBAYER",
-  description:
-    "Personal portfolio of Jobayer Ahmed — React, Next.js, Tailwind CSS developer from Bangladesh.",
+  title: 'Jobayer Hosen - React & Next.js Developer',
+  description: 'Personal portfolio of Jobayer Hosen',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="dark" suppressHydrationWarning>
