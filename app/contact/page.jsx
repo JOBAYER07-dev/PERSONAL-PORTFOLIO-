@@ -14,7 +14,7 @@ const contactLinks = [
     href: 'mailto:jobayerhosen045@gmail.com',
     icon: '✉',
   },
-  { label: '+880 1861961550', href: 'tel:+8801XXXXXXXXX', icon: '📞' },
+  { label: '+880 1861961550', href: 'tel:+8801861961550', icon: '📞' },
   { label: 'GitHub', href: 'https://github.com/JOBAYER07-dev', icon: 'GH' },
   {
     label: 'LinkedIn',

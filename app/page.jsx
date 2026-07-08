@@ -1,6 +1,7 @@
-import Hero from "@/components/Hero";
-import Skills from "@/components/Skills";
-import FeaturedProjects from "@/components/FeaturedProjects";
+import Hero from '@/components/Hero';
+import Skills from '@/components/Skills';
+import FeaturedProjects from '@/components/FeaturedProjects';
+import GitHubStats from '@/components/GitHubStats';
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Hero />
       <Skills />
       <FeaturedProjects />
+      <GitHubStats />
     </>
   );
 }
