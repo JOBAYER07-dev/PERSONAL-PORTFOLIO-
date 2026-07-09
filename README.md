@@ -8,8 +8,7 @@ A modern, responsive personal portfolio website built with **Next.js 15**, **Tai
 
 ## Screenshot
 
-![Portfolio Screenshot](./public/screenshot.png)
-
+![Portfolio Screenshot](https://raw.githubusercontent.com/JOBAYER07-dev/PERSONAL-PORTFOLIO-/main/public/screenshot.png)
 ---
 
 ## About Me
