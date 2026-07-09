@@ -1,6 +1,6 @@
 <div align="center">
 
-![Banner](https://capsule-render.vercel.app/api?type=waving&color=c8f04e&height=200&section=header&text=Jobayer%20Hosen&fontSize=50&fontColor=0a0a0b&fontAlignY=38&desc=React%20%26%20Next.js%20Developer&descAlignY=58&descSize=20&descFontColor=0a0a0b)
+![Banner](https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=40&duration=1&pause=1000&color=C8F04E&background=0A0A0B&center=true&vCenter=true&width=900&height=120&lines=Jobayer+Hosen)
 
 </div>
 
