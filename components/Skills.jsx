@@ -1,7 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const techStack = [
   {
@@ -11,7 +10,7 @@ const techStack = [
   {
     name: 'NEXT.JS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-    invert: true, // Dark mode visibility-er jonno
+    invert: true,
   },
   {
     name: 'JAVASCRIPT',
@@ -63,14 +62,14 @@ const skillsBars = [
   { name: 'Tailwind CSS', pct: 85 },
   { name: 'Next.js', pct: 60 },
   { name: 'Node.js / MongoDB', pct: 50 },
+  { name: 'TypeScript', pct: 40 },
+  { name: 'Firebase', pct: 50 },
+  { name: 'Git & GitHub', pct: 70 },
 ];
 
 function SkillBar({ name, pct, index }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: '-60px' });
-
   return (
-    <div ref={ref} className="space-y-2">
+    <div className="space-y-2">
       <div className="flex justify-between text-sm">
         <span className="font-medium text-base-content/80">{name}</span>
         <span className="text-base-content/50">{pct}%</span>
@@ -79,8 +78,9 @@ function SkillBar({ name, pct, index }) {
         <motion.div
           className="h-full rounded-full bg-[#c8f04e]"
           initial={{ width: 0 }}
-          animate={inView ? { width: `${pct}%` } : { width: 0 }}
-          transition={{ duration: 1.1, delay: index * 0.1, ease: 'easeOut' }}
+          whileInView={{ width: `${pct}%` }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 1.2, delay: index * 0.1, ease: 'easeOut' }}
         />
       </div>
     </div>
@@ -88,15 +88,13 @@ function SkillBar({ name, pct, index }) {
 }
 
 export default function Skills() {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: '-80px' });
-
   return (
-    <section className="py-24 px-6 md:px-16 bg-base-200/50" ref={ref}>
+    <section className="py-24 px-6 md:px-16 bg-base-200/50" id="skills">
       {/* Title */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
@@ -108,10 +106,11 @@ export default function Skills() {
         </h2>
       </motion.div>
 
-      {/* 2nd Image-er moto Icon Cards Grid */}
+      {/* Icon Cards Grid */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.1 }}
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto mb-20"
       >
@@ -119,7 +118,8 @@ export default function Skills() {
           <motion.div
             key={tech.name}
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.05 }}
             className="group flex flex-col items-center justify-center p-6 rounded-2xl bg-base-100 border border-base-300 hover:border-[#c8f04e]/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
           >

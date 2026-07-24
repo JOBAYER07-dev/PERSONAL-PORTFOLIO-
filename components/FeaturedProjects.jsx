@@ -10,7 +10,7 @@ const featured = [
     id: 'constraction-client',
     num: '01',
     name: 'Construction Client',
-    image: '/projects/ticketbari.svg', // Apnar project image path
+    image: '/constraction.jpg',
     desc: 'A modern full-stack construction & building management client platform built for seamless project handling, service booking, and service showcase.',
     stack: ['Next.js 15', 'React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     live: 'https://constraction-client.vercel.app/',
@@ -20,7 +20,7 @@ const featured = [
     id: 'reez-wear',
     num: '02',
     name: 'REEZ Wear',
-    image: '/projects/reez-wear.svg',
+    image: '/reez.jpg',
     desc: "Modern men's fashion e-commerce platform with a minimalist UI, product filtering, order tracking, and dynamic admin dashboard.",
     stack: [
       'Next.js 15',
@@ -37,7 +37,7 @@ const featured = [
     id: 'ticketbari',
     num: '03',
     name: 'TicketBari',
-    image: '/projects/ticketbari.svg',
+    image: '/ticketbari.jpg',
     desc: 'A full-stack transport ticket booking platform with role-based access control, secure payments, and real-time seat management for Users, Vendors, and Admins.',
     stack: [
       'Next.js 15',
@@ -80,7 +80,10 @@ export default function FeaturedProjects() {
 
       <div className="grid md:grid-cols-3 gap-6">
         {featured.map(
-          ({ id, num, name, image, desc, stack, live, code }, i) => (
+          (
+            { id, num, name, image, desc, stack, live, code, upcoming },
+            i, // 👈 upcoming destructure kora hoyeche
+          ) => (
             <motion.div
               key={num}
               initial={{ opacity: 0, y: 40 }}
@@ -97,7 +100,9 @@ export default function FeaturedProjects() {
                 <img
                   src={image}
                   alt={`${name} preview`}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className={`w-full h-full object-cover object-top transition-transform duration-300 ${
+                    upcoming ? 'opacity-60' : 'group-hover:scale-105'
+                  }`}
                 />
               </div>
 

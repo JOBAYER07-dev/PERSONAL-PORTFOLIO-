@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import CopyEmail from '@/components/CopyEmail';
 const EMAILJS_SERVICE_ID = 'service_srag8mf';
 const EMAILJS_TEMPLATE_ID = 'template_e7v5x2f';
 const EMAILJS_PUBLIC_KEY = 'sgSJYM7qheGnxiu3_';
@@ -76,6 +76,9 @@ export default function ContactPage() {
           Want to collaborate on a project? Have a job opportunity? Feel free to
           connect for any reason.
         </p>
+        <div className="flex justify-center mb-8">
+          <CopyEmail />
+        </div>
       </motion.div>
 
       {/* Contact links */}

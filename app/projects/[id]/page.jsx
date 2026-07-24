@@ -11,6 +11,7 @@ const projects = [
     num: '01',
     name: 'Construction Client',
     tagline: 'Modern Full-Stack Construction & Building Platform',
+    image: '/constraction.jpg', // 👈 Image Path Added
     desc: 'Construction Client is a full-stack platform designed for construction companies to present their services, showcase completed projects, handle customer inquiries, and streamline project consultations with an intuitive user experience.',
     stack: [
       'Next.js 15',
@@ -39,6 +40,7 @@ const projects = [
     num: '02',
     name: 'REEZ Wear',
     tagline: "Modern Men's Fashion E-commerce Platform",
+    image: '/reez.jpg',
     desc: "REEZ Wear is a full-stack men's fashion e-commerce platform with a sleek, minimalist UI. Users can browse products, filter by category and price, and track their orders. Admins get a full dashboard to manage products, oversee orders, and control user roles with analytics powered by Recharts.",
     stack: [
       'Next.js 15',
@@ -71,6 +73,7 @@ const projects = [
     num: '03',
     name: 'TicketBari',
     tagline: 'Full-Stack Transport Ticket Booking Platform',
+    image: '/ticketbari.jpg',
     desc: 'TicketBari is a comprehensive transport ticket booking platform with three user roles — User, Vendor, and Admin. Users can search routes, book seats, and pay securely. Vendors manage their own routes and trips. Admins oversee the entire platform with revenue analytics.',
     stack: [
       'Next.js 15',
@@ -103,6 +106,7 @@ const projects = [
     num: '04',
     name: 'MediQueue',
     tagline: 'Full-Stack Medical Appointment & Queue System',
+    image: '/mediqueue.jpg',
     desc: 'MediQueue is a full-stack medical appointment and queue management system. It allows patients to book appointments with doctors, manage their queue position in real time, and receive seamless scheduling. Role-based access ensures doctors, patients, and admins each have tailored experiences.',
     stack: [
       'Next.js',
@@ -133,6 +137,7 @@ const projects = [
     num: '05',
     name: 'SkillSphere',
     tagline: 'Online Learning Platform with Google OAuth',
+    image: '/skillsphere.jpg',
     desc: 'SkillSphere is a modern online learning platform built with Next.js App Router. It features Google OAuth via BetterAuth, course browsing, enrollment, and a clean dashboard for tracking learning progress. MongoDB Atlas powers the backend data layer.',
     stack: [
       'Next.js 16',
@@ -162,6 +167,7 @@ const projects = [
     num: '06',
     name: 'GitHub Issues Tracker',
     tagline: 'Vanilla JS GitHub Issues Browser',
+    image: '/github.jpg',
     desc: 'A Vanilla JavaScript application that fetches and displays GitHub repository issues in real time. Features include search, priority tagging, status filtering (open/closed), and a detail modal for each issue — all without any framework.',
     stack: ['HTML5', 'Tailwind CSS', 'Vanilla JavaScript', 'GitHub REST API'],
     live: 'https://jobayer07-dev.github.io/GitHub_Issue_Tracker/',
@@ -184,6 +190,7 @@ const projects = [
     num: '07',
     name: 'English Janala',
     tagline: 'Vocabulary Learning App with Speech API',
+    image: '/janala.jpg',
     desc: 'English Janala is a vocabulary learning app that helps users learn and pronounce English words. It uses the Web Speech API for text-to-speech pronunciation and pulls word data from a REST API, making it an interactive and engaging learning tool.',
     stack: [
       'Vanilla JavaScript',
@@ -211,6 +218,7 @@ const projects = [
     num: '08',
     name: 'BPL Players Selection',
     tagline: 'Cricket Players Selection App',
+    image: '/bpl.jpg',
     desc: 'A cricket player selection app for the Bangladesh Premier League. Users can browse available players, filter by category, and select their dream team within a coin budget. Features search, filter, and a live coin balance tracker.',
     stack: ['React', 'Tailwind CSS', 'DaisyUI', 'REST API', 'React Toastify'],
     live: 'https://bpl-players-selection-from-world.netlify.app/',
@@ -232,6 +240,7 @@ const projects = [
     num: '09',
     name: 'Keen Keeper',
     tagline: 'Friend Relationship Manager',
+    image: '/keenkeeper.jpg',
     desc: 'Keen Keeper is a friend relationship management app built with React. Users can add, view, and manage their friends list with lazy loading for performance. Features React Router v6 for navigation and Context API for global state.',
     stack: [
       'React',
@@ -259,6 +268,7 @@ const projects = [
     num: '10',
     name: 'DigiTools',
     tagline: 'Digital Tools Marketplace',
+    image: '/digitool.jpg',
     desc: 'DigiTools is a React-based digital tools marketplace where users can browse, add to cart, and purchase digital products. Features include cart management with quantity control, toast notifications for user feedback, and a smooth responsive UI.',
     stack: ['React 19', 'Vite', 'Tailwind CSS', 'DaisyUI', 'React Toastify'],
     live: 'https://jobayer-digitool.netlify.app',
@@ -319,26 +329,28 @@ export default function ProjectDetailPage({ params }) {
         </p>
       </motion.div>
 
-      {/* Project Image Box */}
+      {/* Project Image Container */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="w-full h-56 md:h-72 rounded-2xl bg-base-200 border border-base-300 flex items-center justify-center mb-12 overflow-hidden relative"
+        className="w-full aspect-[16/9] rounded-2xl bg-base-200 border border-base-300 mb-12 overflow-hidden relative group"
       >
-        <div className="text-center">
-          <div className="font-[family-name:var(--font-syne)] font-bold text-6xl text-[#c8f04e]/20 mb-2">
-            {project.num}
-          </div>
-          <p className="text-base-content/20 text-sm">Project Preview</p>
-        </div>
+        {/* Dynamic Image Element */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={project.image}
+          alt={`${project.name} preview`}
+          className="w-full h-full object-cover object-top"
+        />
+
         {/* CTA Overlay Buttons */}
-        <div className="absolute bottom-4 right-4 flex gap-3">
+        <div className="absolute bottom-4 right-4 flex gap-3 z-10">
           <a
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-sm rounded-full bg-[#c8f04e] text-black border-none hover:opacity-85"
+            className="btn btn-sm rounded-full bg-[#c8f04e] text-black border-none hover:opacity-85 shadow-md"
           >
             Live Site →
           </a>
@@ -346,7 +358,7 @@ export default function ProjectDetailPage({ params }) {
             href={project.code}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-sm btn-outline rounded-full"
+            className="btn btn-sm btn-outline rounded-full backdrop-blur-md bg-black/40 text-white shadow-md"
           >
             GitHub →
           </a>

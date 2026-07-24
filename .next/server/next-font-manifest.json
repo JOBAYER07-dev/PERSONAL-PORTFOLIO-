@@ -1,14 +1,6 @@
 {
   "app": {
-    "[project]/app/about/page": [
-      "static/media/5c285b27cdda1fe8-s.p.a62025f2.woff2",
-      "static/media/0c795a286deabae8-s.p.b6c48e4e.woff2"
-    ],
-    "[project]/app/blog/[id]/page": [
-      "static/media/5c285b27cdda1fe8-s.p.a62025f2.woff2",
-      "static/media/0c795a286deabae8-s.p.b6c48e4e.woff2"
-    ],
-    "[project]/app/blog/page": [
+    "[project]/app/_not-found/page": [
       "static/media/5c285b27cdda1fe8-s.p.a62025f2.woff2",
       "static/media/0c795a286deabae8-s.p.b6c48e4e.woff2"
     ],

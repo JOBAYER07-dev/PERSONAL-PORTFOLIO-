@@ -18,7 +18,7 @@ const projects = [
         id: 'constraction-client',
         num: '01',
         name: 'Construction Client',
-        image: '/projects/ticketbari.svg',
+        image: '/constraction.jpg',
         desc: 'A modern full-stack construction & building management client platform built for seamless project handling, service booking, and service showcase.',
         stack: [
             'Next.js 15',
@@ -34,7 +34,7 @@ const projects = [
         id: 'reez-wear',
         num: '02',
         name: 'REEZ Wear',
-        image: '/projects/reez-wear.svg',
+        image: '/reez.jpg',
         desc: "Modern men's fashion e-commerce platform with a minimalist UI, product filtering, order tracking, and dynamic admin dashboard.",
         stack: [
             'Next.js 15',
@@ -51,7 +51,7 @@ const projects = [
         id: 'ticketbari',
         num: '03',
         name: 'TicketBari',
-        image: '/projects/ticketbari.svg',
+        image: '/ticketbari.jpg',
         desc: 'A full-stack transport ticket booking platform with role-based access control, secure payments, and real-time seat management for Users, Vendors, and Admins.',
         stack: [
             'Next.js 15',
@@ -68,7 +68,7 @@ const projects = [
         id: 'mediqueue',
         num: '04',
         name: 'MediQueue',
-        image: '/projects/mediqueue.svg',
+        image: '/mediqueue.jpg',
         desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
         stack: [
             'Next.js',
@@ -84,7 +84,7 @@ const projects = [
         id: 'skillsphere',
         num: '05',
         name: 'SkillSphere',
-        image: '/projects/skillsphere.svg',
+        image: '/skillsphere.jpg',
         desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
         stack: [
             'Next.js',
@@ -99,7 +99,7 @@ const projects = [
         id: 'github-issues-tracker',
         num: '06',
         name: 'GitHub Issues Tracker',
-        image: '/projects/github-issues-tracker.svg',
+        image: '/github.jpg',
         desc: 'Vanilla JS app with real-time search, priority tags, status filter and issue detail modal.',
         stack: [
             'HTML',
@@ -114,7 +114,7 @@ const projects = [
         id: 'english-janala',
         num: '07',
         name: 'English Janala',
-        image: '/projects/english-janala.svg',
+        image: '/janala.jpg',
         desc: 'Vocabulary learning app with Web Speech API pronunciation feature and REST API integration.',
         stack: [
             'JavaScript',
@@ -128,7 +128,7 @@ const projects = [
         id: 'bpl-players',
         num: '08',
         name: 'BPL Players Selection',
-        image: '/projects/bpl-players.svg',
+        image: '/bpl.jpg',
         desc: 'A cricket players selection app with REST API integration, search, and filter functionalities.',
         stack: [
             'React',
@@ -143,7 +143,7 @@ const projects = [
         id: 'keen-keeper',
         num: '09',
         name: 'Keen Keeper',
-        image: '/projects/keen-keeper.svg',
+        image: '/keenkeeper.jpg',
         desc: 'Friend relationship manager with React Router v6, Context API and lazy loading.',
         stack: [
             'React',
@@ -158,7 +158,7 @@ const projects = [
         id: 'digitools',
         num: '10',
         name: 'DigiTools',
-        image: '/projects/digitools.svg',
+        image: '/digitool.jpg',
         desc: 'React-based digital tools marketplace with cart management, toast notifications and smooth UX.',
         stack: [
             'React 19',
@@ -173,7 +173,7 @@ const projects = [
         id: null,
         num: '11',
         name: 'Coming Soon...',
-        image: '/projects/coming-soon.svg',
+        image: '/Coming.jpg',
         desc: "I'm currently working on a full-stack project using Next.js.",
         stack: [
             'Next.js',
@@ -256,7 +256,7 @@ function ProjectsPage() {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: image,
                                     alt: "".concat(name, " preview"),
-                                    className: "w-full h-full object-cover transition-transform duration-300 ".concat(upcoming ? 'opacity-60' : 'group-hover:scale-105')
+                                    className: "w-full h-full object-cover object-top transition-transform duration-300 ".concat(upcoming ? 'opacity-60' : 'group-hover:scale-105')
                                 }, void 0, false, {
                                     fileName: "[project]/app/projects/page.jsx",
                                     lineNumber: 171,

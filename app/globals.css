@@ -24,3 +24,6 @@
   .bg-accent-lime { background-color: var(--accent); }
   .border-accent-lime { border-color: var(--accent); }
 }
+.bg-ambient-glow {
+  background: radial-gradient(circle at 50% 20%, rgba(200, 240, 78, 0.08) 0%, transparent 50%);
+}
