@@ -31,24 +31,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="dark" suppressHydrationWarning>
       <body
+        suppressHydrationWarning // 👈 Ei attribute-ti body tag-e add kore din
         className={`${dmSans.variable} ${syne.variable} font-[family-name:var(--font-dm-sans)] min-h-screen`}
       >
-        {/* Scroll progress bar — top of page */}
+        {/* Scroll progress bar top of page */}
         <ScrollProgress />
-
         {/* Custom cursor */}
         <CustomCursor />
-
         {/* Entry loading screen */}
         <LoadingScreen />
-
         {/* Smooth scroll wrapper */}
         <SmoothScroll>
           <Navbar />
           <main>{children}</main>
           <Footer />
         </SmoothScroll>
-
         {/* Back to top button */}
         <BackToTop />
       </body>

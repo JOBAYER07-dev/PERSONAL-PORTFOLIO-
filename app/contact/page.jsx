@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID = 'service_srag8mf';
+const EMAILJS_TEMPLATE_ID = 'template_e7v5x2f';
+const EMAILJS_PUBLIC_KEY = 'sgSJYM7qheGnxiu3_';
 
 const contactLinks = [
   {
@@ -15,6 +15,7 @@ const contactLinks = [
     icon: '✉',
   },
   { label: '+880 1861961550', href: 'tel:+8801861961550', icon: '📞' },
+  { label: 'WhatsApp', href: 'https://wa.me/8801861961550', icon: 'WA' },
   { label: 'GitHub', href: 'https://github.com/JOBAYER07-dev', icon: 'GH' },
   {
     label: 'LinkedIn',

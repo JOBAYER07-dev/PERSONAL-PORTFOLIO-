@@ -5,8 +5,35 @@ import Link from 'next/link';
 
 const projects = [
   {
-    id: 'ticketbari',
+    id: 'constraction-client',
     num: '01',
+    name: 'Construction Client',
+    image: '/projects/ticketbari.svg', // Apnar design image path ekhane bosiye nin
+    desc: 'A modern full-stack construction & building management client platform built for seamless project handling, service booking, and service showcase.',
+    stack: ['Next.js 15', 'React', 'Tailwind CSS', 'Express.js', 'MongoDB'],
+    live: 'https://constraction-client.vercel.app/',
+    code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_CLIENT',
+  },
+  {
+    id: 'reez-wear',
+    num: '02',
+    name: 'REEZ Wear',
+    image: '/projects/reez-wear.svg',
+    desc: "Modern men's fashion e-commerce platform with a minimalist UI, product filtering, order tracking, and dynamic admin dashboard.",
+    stack: [
+      'Next.js 15',
+      'TypeScript',
+      'Express.js',
+      'MongoDB',
+      'Better Auth',
+      'Tailwind CSS',
+    ],
+    live: 'https://reez-wear.vercel.app/',
+    code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_CLIENT',
+  },
+  {
+    id: 'ticketbari',
+    num: '03',
     name: 'TicketBari',
     image: '/projects/ticketbari.svg',
     desc: 'A full-stack transport ticket booking platform with role-based access control, secure payments, and real-time seat management for Users, Vendors, and Admins.',
@@ -23,7 +50,7 @@ const projects = [
   },
   {
     id: 'mediqueue',
-    num: '02',
+    num: '04',
     name: 'MediQueue',
     image: '/projects/mediqueue.svg',
     desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
@@ -33,7 +60,7 @@ const projects = [
   },
   {
     id: 'skillsphere',
-    num: '03',
+    num: '05',
     name: 'SkillSphere',
     image: '/projects/skillsphere.svg',
     desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
@@ -43,7 +70,7 @@ const projects = [
   },
   {
     id: 'github-issues-tracker',
-    num: '04',
+    num: '06',
     name: 'GitHub Issues Tracker',
     image: '/projects/github-issues-tracker.svg',
     desc: 'Vanilla JS app with real-time search, priority tags, status filter and issue detail modal.',
@@ -53,7 +80,7 @@ const projects = [
   },
   {
     id: 'english-janala',
-    num: '05',
+    num: '07',
     name: 'English Janala',
     image: '/projects/english-janala.svg',
     desc: 'Vocabulary learning app with Web Speech API pronunciation feature and REST API integration.',
@@ -63,7 +90,7 @@ const projects = [
   },
   {
     id: 'bpl-players',
-    num: '06',
+    num: '08',
     name: 'BPL Players Selection',
     image: '/projects/bpl-players.svg',
     desc: 'A cricket players selection app with REST API integration, search, and filter functionalities.',
@@ -73,7 +100,7 @@ const projects = [
   },
   {
     id: 'keen-keeper',
-    num: '07',
+    num: '09',
     name: 'Keen Keeper',
     image: '/projects/keen-keeper.svg',
     desc: 'Friend relationship manager with React Router v6, Context API and lazy loading.',
@@ -83,7 +110,7 @@ const projects = [
   },
   {
     id: 'digitools',
-    num: '08',
+    num: '10',
     name: 'DigiTools',
     image: '/projects/digitools.svg',
     desc: 'React-based digital tools marketplace with cart management, toast notifications and smooth UX.',
@@ -93,7 +120,7 @@ const projects = [
   },
   {
     id: null,
-    num: '09',
+    num: '11',
     name: 'Coming Soon...',
     image: '/projects/coming-soon.svg',
     desc: "I'm currently working on a full-stack project using Next.js.",
@@ -121,7 +148,7 @@ export default function ProjectsPage() {
         </h1>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 p-6 lg:grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map(
           ({ id, num, name, image, desc, stack, live, code, upcoming }, i) => (
             <motion.div
@@ -135,10 +162,11 @@ export default function ProjectsPage() {
                   : 'border border-base-300 hover:border-[#c8f04e]/25 hover:-translate-y-1'
               }`}
             >
+              {/* Top Accent Line */}
               <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-10" />
 
-              {/* Project image */}
-              <div className="w-full aspect-[16/9] overflow-hidden">
+              {/* Project Image Box */}
+              <div className="w-full aspect-[16/9] overflow-hidden bg-base-300">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={image}
@@ -149,64 +177,67 @@ export default function ProjectsPage() {
                 />
               </div>
 
-              <div className="pl-3 flex flex-col flex-1">
-                <div className="flex items-center gap-3 text-xs text-base-content/30 tracking-widest mb-5">
+              {/* Content Box with Proper Inner Padding */}
+              <div className="p-6 flex flex-col flex-1">
+                <div className="flex items-center gap-3 text-xs text-base-content/30 tracking-widest mb-4">
                   {num}
                   <div className="flex-1 h-px bg-base-300" />
                 </div>
-              </div>
-              <h3
-                className={`font-[family-name:var(--font-syne)] font-bold text-xl mb-2 ${
-                  upcoming ? 'text-base-content/40' : ''
-                }`}
-              >
-                {name}
-              </h3>
-              <p
-                className={`text-sm leading-relaxed mb-5 flex-1 ${
-                  upcoming ? 'text-base-content/30' : 'text-base-content/50'
-                }`}
-              >
-                {desc}
-              </p>
 
-              <div className="flex flex-wrap gap-1.5 mb-6">
-                {stack.map(t => (
-                  <span
-                    key={t}
-                    className="text-xs bg-base-300 text-base-content/60 px-2.5 py-1 rounded-full"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
+                <h3
+                  className={`font-[family-name:var(--font-syne)] font-bold text-2xl mb-3 ${
+                    upcoming ? 'text-base-content/40' : ''
+                  }`}
+                >
+                  {name}
+                </h3>
 
-              {!upcoming && (
-                <div className="flex gap-3 flex-wrap">
-                  <Link
-                    href={`/projects/${id}`}
-                    className="btn btn-sm rounded-full bg-[#c8f04e] text-black border-none hover:opacity-85"
-                  >
-                    View Details →
-                  </Link>
-                  <a
-                    href={live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-sm btn-outline rounded-full text-[#c8f04e] border-[#c8f04e]/30 hover:border-[#c8f04e]"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href={code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-sm btn-outline rounded-full"
-                  >
-                    Code
-                  </a>
+                <p
+                  className={`text-sm leading-relaxed mb-6 flex-1 ${
+                    upcoming ? 'text-base-content/30' : 'text-base-content/50'
+                  }`}
+                >
+                  {desc}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {stack.map(t => (
+                    <span
+                      key={t}
+                      className="text-xs bg-base-300 text-base-content/60 px-3 py-1 rounded-full font-medium"
+                    >
+                      {t}
+                    </span>
+                  ))}
                 </div>
-              )}
+
+                {!upcoming && (
+                  <div className="flex gap-3 flex-wrap items-center mt-auto pt-2">
+                    <Link
+                      href={`/projects/${id}`}
+                      className="btn btn-sm rounded-full bg-[#c8f04e] text-black border-none hover:opacity-85"
+                    >
+                      View Details →
+                    </Link>
+                    <a
+                      href={live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-sm btn-outline rounded-full text-[#c8f04e] border-[#c8f04e]/30 hover:border-[#c8f04e]"
+                    >
+                      Live
+                    </a>
+                    <a
+                      href={code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-sm btn-outline rounded-full"
+                    >
+                      Code
+                    </a>
+                  </div>
+                )}
+              </div>
             </motion.div>
           ),
         )}

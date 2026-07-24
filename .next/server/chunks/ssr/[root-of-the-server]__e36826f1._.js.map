@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///C:/PROGRAMING%20HERO/portfolio/app/page.jsx"],"sourcesContent":["import Hero from \"@/components/Hero\";\nimport Skills from \"@/components/Skills\";\nimport FeaturedProjects from \"@/components/FeaturedProjects\";\n\nexport default function HomePage() {\n  return (\n    <>\n      <Hero />\n      <Skills />\n      <FeaturedProjects />\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;AAIe,SAAS;IACtB,qBACE;;0BACE,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;;;AAGP","debugId":null}}]
-}

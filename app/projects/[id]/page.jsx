@@ -7,8 +7,36 @@ import { use } from 'react';
 
 const projects = [
   {
-    id: 'reez-wear',
+    id: 'constraction-client',
     num: '01',
+    name: 'Construction Client',
+    tagline: 'Modern Full-Stack Construction & Building Platform',
+    desc: 'Construction Client is a full-stack platform designed for construction companies to present their services, showcase completed projects, handle customer inquiries, and streamline project consultations with an intuitive user experience.',
+    stack: [
+      'Next.js 15',
+      'React',
+      'Express.js',
+      'MongoDB',
+      'Tailwind CSS',
+      'Framer Motion',
+    ],
+    live: 'https://constraction-client.vercel.app/',
+    code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_CLIENT',
+    challenges: [
+      'Designing an intuitive layout to showcase complex service tiers and construction portfolio items.',
+      'Configuring seamless cross-origin request handling (CORS) between client-side Next.js and Express backend API routes.',
+      'Optimizing dynamic image loading for large high-resolution project images without sacrificing page speed.',
+    ],
+    improvements: [
+      'Add a cost estimator calculator for prospective clients.',
+      'Implement real-time project milestone tracking dashboard.',
+      'Add an interactive booking system for consultation meetings.',
+      'Integrate client review and rating system.',
+    ],
+  },
+  {
+    id: 'reez-wear',
+    num: '02',
     name: 'REEZ Wear',
     tagline: "Modern Men's Fashion E-commerce Platform",
     desc: "REEZ Wear is a full-stack men's fashion e-commerce platform with a sleek, minimalist UI. Users can browse products, filter by category and price, and track their orders. Admins get a full dashboard to manage products, oversee orders, and control user roles with analytics powered by Recharts.",
@@ -40,7 +68,7 @@ const projects = [
   },
   {
     id: 'ticketbari',
-    num: '02',
+    num: '03',
     name: 'TicketBari',
     tagline: 'Full-Stack Transport Ticket Booking Platform',
     desc: 'TicketBari is a comprehensive transport ticket booking platform with three user roles — User, Vendor, and Admin. Users can search routes, book seats, and pay securely. Vendors manage their own routes and trips. Admins oversee the entire platform with revenue analytics.',
@@ -72,7 +100,7 @@ const projects = [
   },
   {
     id: 'mediqueue',
-    num: '03',
+    num: '04',
     name: 'MediQueue',
     tagline: 'Full-Stack Medical Appointment & Queue System',
     desc: 'MediQueue is a full-stack medical appointment and queue management system. It allows patients to book appointments with doctors, manage their queue position in real time, and receive seamless scheduling. Role-based access ensures doctors, patients, and admins each have tailored experiences.',
@@ -102,7 +130,7 @@ const projects = [
   },
   {
     id: 'skillsphere',
-    num: '04',
+    num: '05',
     name: 'SkillSphere',
     tagline: 'Online Learning Platform with Google OAuth',
     desc: 'SkillSphere is a modern online learning platform built with Next.js App Router. It features Google OAuth via BetterAuth, course browsing, enrollment, and a clean dashboard for tracking learning progress. MongoDB Atlas powers the backend data layer.',
@@ -131,7 +159,7 @@ const projects = [
   },
   {
     id: 'github-issues-tracker',
-    num: '05',
+    num: '06',
     name: 'GitHub Issues Tracker',
     tagline: 'Vanilla JS GitHub Issues Browser',
     desc: 'A Vanilla JavaScript application that fetches and displays GitHub repository issues in real time. Features include search, priority tagging, status filtering (open/closed), and a detail modal for each issue — all without any framework.',
@@ -153,7 +181,7 @@ const projects = [
   },
   {
     id: 'english-janala',
-    num: '06',
+    num: '07',
     name: 'English Janala',
     tagline: 'Vocabulary Learning App with Speech API',
     desc: 'English Janala is a vocabulary learning app that helps users learn and pronounce English words. It uses the Web Speech API for text-to-speech pronunciation and pulls word data from a REST API, making it an interactive and engaging learning tool.',
@@ -257,7 +285,7 @@ export default function ProjectDetailPage({ params }) {
 
   return (
     <section className="min-h-screen pt-32 pb-24 px-6 md:px-16 max-w-4xl mx-auto">
-      {/* Back */}
+      {/* Back Link */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -291,7 +319,7 @@ export default function ProjectDetailPage({ params }) {
         </p>
       </motion.div>
 
-      {/* Project image placeholder */}
+      {/* Project Image Box */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -304,7 +332,7 @@ export default function ProjectDetailPage({ params }) {
           </div>
           <p className="text-base-content/20 text-sm">Project Preview</p>
         </div>
-        {/* CTA overlay */}
+        {/* CTA Overlay Buttons */}
         <div className="absolute bottom-4 right-4 flex gap-3">
           <a
             href={project.live}
@@ -326,7 +354,7 @@ export default function ProjectDetailPage({ params }) {
       </motion.div>
 
       <div className="grid md:grid-cols-3 gap-8">
-        {/* Left — main content */}
+        {/* Left Section — Main Details */}
         <div className="md:col-span-2 space-y-10">
           {/* Description */}
           <motion.div
@@ -342,7 +370,7 @@ export default function ProjectDetailPage({ params }) {
             </p>
           </motion.div>
 
-          {/* Challenges */}
+          {/* Challenges Faced */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -364,7 +392,7 @@ export default function ProjectDetailPage({ params }) {
             </ul>
           </motion.div>
 
-          {/* Improvements */}
+          {/* Future Improvements */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -387,7 +415,7 @@ export default function ProjectDetailPage({ params }) {
           </motion.div>
         </div>
 
-        {/* Right — sidebar */}
+        {/* Right Section — Sidebar */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -411,7 +439,7 @@ export default function ProjectDetailPage({ params }) {
             </div>
           </div>
 
-          {/* Links */}
+          {/* External Links */}
           <div className="bg-base-200 border border-base-300 rounded-2xl p-5 space-y-3">
             <h3 className="font-[family-name:var(--font-syne)] font-bold text-sm uppercase tracking-widest mb-4 text-base-content/50">
               Links
@@ -437,7 +465,7 @@ export default function ProjectDetailPage({ params }) {
         </motion.div>
       </div>
 
-      {/* Bottom nav */}
+      {/* Bottom Navigation Bar */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
