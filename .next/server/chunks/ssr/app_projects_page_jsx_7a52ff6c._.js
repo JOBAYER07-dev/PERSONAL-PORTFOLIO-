@@ -18,6 +18,7 @@ const projects = [
         id: 'ticketbari',
         num: '01',
         name: 'TicketBari',
+        image: '/projects/ticketbari.svg',
         desc: 'A full-stack transport ticket booking platform with role-based access control, secure payments, and real-time seat management for Users, Vendors, and Admins.',
         stack: [
             'Next.js 15',
@@ -34,6 +35,7 @@ const projects = [
         id: 'mediqueue',
         num: '02',
         name: 'MediQueue',
+        image: '/projects/mediqueue.svg',
         desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
         stack: [
             'Next.js',
@@ -49,6 +51,7 @@ const projects = [
         id: 'skillsphere',
         num: '03',
         name: 'SkillSphere',
+        image: '/projects/skillsphere.svg',
         desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
         stack: [
             'Next.js',
@@ -63,6 +66,7 @@ const projects = [
         id: 'github-issues-tracker',
         num: '04',
         name: 'GitHub Issues Tracker',
+        image: '/projects/github-issues-tracker.svg',
         desc: 'Vanilla JS app with real-time search, priority tags, status filter and issue detail modal.',
         stack: [
             'HTML',
@@ -77,6 +81,7 @@ const projects = [
         id: 'english-janala',
         num: '05',
         name: 'English Janala',
+        image: '/projects/english-janala.svg',
         desc: 'Vocabulary learning app with Web Speech API pronunciation feature and REST API integration.',
         stack: [
             'JavaScript',
@@ -90,6 +95,7 @@ const projects = [
         id: 'bpl-players',
         num: '06',
         name: 'BPL Players Selection',
+        image: '/projects/bpl-players.svg',
         desc: 'A cricket players selection app with REST API integration, search, and filter functionalities.',
         stack: [
             'React',
@@ -104,6 +110,7 @@ const projects = [
         id: 'keen-keeper',
         num: '07',
         name: 'Keen Keeper',
+        image: '/projects/keen-keeper.svg',
         desc: 'Friend relationship manager with React Router v6, Context API and lazy loading.',
         stack: [
             'React',
@@ -118,6 +125,7 @@ const projects = [
         id: 'digitools',
         num: '08',
         name: 'DigiTools',
+        image: '/projects/digitools.svg',
         desc: 'React-based digital tools marketplace with cart management, toast notifications and smooth UX.',
         stack: [
             'React 19',
@@ -132,6 +140,7 @@ const projects = [
         id: null,
         num: '09',
         name: 'Coming Soon...',
+        image: '/projects/coming-soon.svg',
         desc: "I'm currently working on a full-stack project using Next.js.",
         stack: [
             'Next.js',
@@ -166,7 +175,7 @@ function ProjectsPage() {
                         children: "My Work"
                     }, void 0, false, {
                         fileName: "[project]/app/projects/page.jsx",
-                        lineNumber: 107,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -174,18 +183,18 @@ function ProjectsPage() {
                         children: "All Projects"
                     }, void 0, false, {
                         fileName: "[project]/app/projects/page.jsx",
-                        lineNumber: 110,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/projects/page.jsx",
-                lineNumber: 101,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid md:grid-cols-2 lg:grid-cols-3 gap-5",
-                children: projects.map(({ id, num, name, desc, stack, live, code, upcoming }, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "grid md:grid-cols-2 p-6 lg:grid-cols-3 gap-5",
+                children: projects.map(({ id, num, name, image, desc, stack, live, code, upcoming }, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
                             opacity: 0,
                             y: 40
@@ -198,30 +207,53 @@ function ProjectsPage() {
                             duration: 0.55,
                             delay: i * 0.08
                         },
-                        className: `group relative bg-base-200 rounded-2xl p-6 transition-all duration-300 overflow-hidden flex flex-col ${upcoming ? 'border border-dashed border-base-300' : 'border border-base-300 hover:border-[#c8f04e]/25 hover:-translate-y-1'}`,
+                        className: `group relative bg-base-200 rounded-2xl transition-all duration-300 overflow-hidden flex flex-col ${upcoming ? 'border border-dashed border-base-300' : 'border border-base-300 hover:border-[#c8f04e]/25 hover:-translate-y-1'}`,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                                className: "absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-10"
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 129,
+                                lineNumber: 138,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-3 text-xs text-base-content/30 tracking-widest mb-5",
-                                children: [
-                                    num,
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex-1 h-px bg-base-300"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 133,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                className: "w-full aspect-[16/9] overflow-hidden",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: image,
+                                    alt: `${name} preview`,
+                                    className: `w-full h-full object-cover transition-transform duration-300 ${upcoming ? 'opacity-60' : 'group-hover:scale-105'}`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/projects/page.jsx",
+                                    lineNumber: 143,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 131,
+                                lineNumber: 141,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "pl-3 flex flex-col flex-1",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-3 text-xs text-base-content/30 tracking-widest mb-5",
+                                    children: [
+                                        num,
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex-1 h-px bg-base-300"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/projects/page.jsx",
+                                            lineNumber: 155,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/projects/page.jsx",
+                                    lineNumber: 153,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/projects/page.jsx",
+                                lineNumber: 152,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -229,7 +261,7 @@ function ProjectsPage() {
                                 children: name
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 136,
+                                lineNumber: 158,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -237,7 +269,7 @@ function ProjectsPage() {
                                 children: desc
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 143,
+                                lineNumber: 165,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -247,12 +279,12 @@ function ProjectsPage() {
                                         children: t
                                     }, t, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 153,
+                                        lineNumber: 175,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 151,
+                                lineNumber: 173,
                                 columnNumber: 15
                             }, this),
                             !upcoming && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -264,7 +296,7 @@ function ProjectsPage() {
                                         children: "View Details →"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 164,
+                                        lineNumber: 186,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -275,7 +307,7 @@ function ProjectsPage() {
                                         children: "Live"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 170,
+                                        lineNumber: 192,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -286,30 +318,30 @@ function ProjectsPage() {
                                         children: "Code"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/page.jsx",
-                                        lineNumber: 178,
+                                        lineNumber: 200,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/page.jsx",
-                                lineNumber: 163,
+                                lineNumber: 185,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, num, true, {
                         fileName: "[project]/app/projects/page.jsx",
-                        lineNumber: 118,
+                        lineNumber: 127,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/projects/page.jsx",
-                lineNumber: 115,
+                lineNumber: 124,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/projects/page.jsx",
-        lineNumber: 100,
+        lineNumber: 109,
         columnNumber: 5
     }, this);
 }

@@ -7,8 +7,40 @@ import { use } from 'react';
 
 const projects = [
   {
-    id: 'ticketbari',
+    id: 'reez-wear',
     num: '01',
+    name: 'REEZ Wear',
+    tagline: "Modern Men's Fashion E-commerce Platform",
+    desc: "REEZ Wear is a full-stack men's fashion e-commerce platform with a sleek, minimalist UI. Users can browse products, filter by category and price, and track their orders. Admins get a full dashboard to manage products, oversee orders, and control user roles with analytics powered by Recharts.",
+    stack: [
+      'Next.js 15',
+      'TypeScript',
+      'Express.js',
+      'MongoDB',
+      'Better Auth',
+      'Tailwind CSS',
+      'Recharts',
+      'Lucide React',
+      'Sonner',
+    ],
+    live: 'https://reez-wear.vercel.app/',
+    code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_CLIENT',
+    challenges: [
+      'Implementing role-based access control (RBAC) with Better Auth to separate User and Admin permissions across API routes.',
+      "Integrating Google OAuth alongside Email/Password authentication using Better Auth's multi-provider setup.",
+      'Building a real-time product search with category filters and dynamic price range sliders without excessive re-renders.',
+      'Managing CORS and environment configuration across Vercel (client) and Render (server) for production deployment.',
+    ],
+    improvements: [
+      'Add a wishlist feature so users can save products for later.',
+      'Implement order status email notifications for users and admins.',
+      'Add product review and rating system with verified purchase badges.',
+      'Introduce a coupon/discount code system for promotional campaigns.',
+    ],
+  },
+  {
+    id: 'ticketbari',
+    num: '02',
     name: 'TicketBari',
     tagline: 'Full-Stack Transport Ticket Booking Platform',
     desc: 'TicketBari is a comprehensive transport ticket booking platform with three user roles — User, Vendor, and Admin. Users can search routes, book seats, and pay securely. Vendors manage their own routes and trips. Admins oversee the entire platform with revenue analytics.',
@@ -40,7 +72,7 @@ const projects = [
   },
   {
     id: 'mediqueue',
-    num: '02',
+    num: '03',
     name: 'MediQueue',
     tagline: 'Full-Stack Medical Appointment & Queue System',
     desc: 'MediQueue is a full-stack medical appointment and queue management system. It allows patients to book appointments with doctors, manage their queue position in real time, and receive seamless scheduling. Role-based access ensures doctors, patients, and admins each have tailored experiences.',
@@ -70,7 +102,7 @@ const projects = [
   },
   {
     id: 'skillsphere',
-    num: '03',
+    num: '04',
     name: 'SkillSphere',
     tagline: 'Online Learning Platform with Google OAuth',
     desc: 'SkillSphere is a modern online learning platform built with Next.js App Router. It features Google OAuth via BetterAuth, course browsing, enrollment, and a clean dashboard for tracking learning progress. MongoDB Atlas powers the backend data layer.',
@@ -99,7 +131,7 @@ const projects = [
   },
   {
     id: 'github-issues-tracker',
-    num: '04',
+    num: '05',
     name: 'GitHub Issues Tracker',
     tagline: 'Vanilla JS GitHub Issues Browser',
     desc: 'A Vanilla JavaScript application that fetches and displays GitHub repository issues in real time. Features include search, priority tagging, status filtering (open/closed), and a detail modal for each issue — all without any framework.',
@@ -121,7 +153,7 @@ const projects = [
   },
   {
     id: 'english-janala',
-    num: '05',
+    num: '06',
     name: 'English Janala',
     tagline: 'Vocabulary Learning App with Speech API',
     desc: 'English Janala is a vocabulary learning app that helps users learn and pronounce English words. It uses the Web Speech API for text-to-speech pronunciation and pulls word data from a REST API, making it an interactive and engaging learning tool.',
@@ -148,7 +180,7 @@ const projects = [
   },
   {
     id: 'bpl-players',
-    num: '06',
+    num: '08',
     name: 'BPL Players Selection',
     tagline: 'Cricket Players Selection App',
     desc: 'A cricket player selection app for the Bangladesh Premier League. Users can browse available players, filter by category, and select their dream team within a coin budget. Features search, filter, and a live coin balance tracker.',
@@ -169,7 +201,7 @@ const projects = [
   },
   {
     id: 'keen-keeper',
-    num: '07',
+    num: '09',
     name: 'Keen Keeper',
     tagline: 'Friend Relationship Manager',
     desc: 'Keen Keeper is a friend relationship management app built with React. Users can add, view, and manage their friends list with lazy loading for performance. Features React Router v6 for navigation and Context API for global state.',
@@ -196,7 +228,7 @@ const projects = [
   },
   {
     id: 'digitools',
-    num: '08',
+    num: '10',
     name: 'DigiTools',
     tagline: 'Digital Tools Marketplace',
     desc: 'DigiTools is a React-based digital tools marketplace where users can browse, add to cart, and purchase digital products. Features include cart management with quantity control, toast notifications for user feedback, and a smooth responsive UI.',

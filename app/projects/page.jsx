@@ -8,6 +8,7 @@ const projects = [
     id: 'ticketbari',
     num: '01',
     name: 'TicketBari',
+    image: '/projects/ticketbari.svg',
     desc: 'A full-stack transport ticket booking platform with role-based access control, secure payments, and real-time seat management for Users, Vendors, and Admins.',
     stack: [
       'Next.js 15',
@@ -24,6 +25,7 @@ const projects = [
     id: 'mediqueue',
     num: '02',
     name: 'MediQueue',
+    image: '/projects/mediqueue.svg',
     desc: 'A full-stack medical appointment & queue management system with real-time scheduling, role-based access, and seamless patient flow.',
     stack: ['Next.js', 'Firebase', 'MongoDB', 'JWT', 'Tailwind CSS'],
     live: 'https://medi-queue-ecru.vercel.app/',
@@ -33,6 +35,7 @@ const projects = [
     id: 'skillsphere',
     num: '03',
     name: 'SkillSphere',
+    image: '/projects/skillsphere.svg',
     desc: 'Online learning platform with Next.js App Router, BetterAuth (Google OAuth), and MongoDB Atlas.',
     stack: ['Next.js', 'BetterAuth', 'MongoDB Atlas', 'DaisyUI'],
     live: 'https://skill-sphere-sable.vercel.app/',
@@ -42,6 +45,7 @@ const projects = [
     id: 'github-issues-tracker',
     num: '04',
     name: 'GitHub Issues Tracker',
+    image: '/projects/github-issues-tracker.svg',
     desc: 'Vanilla JS app with real-time search, priority tags, status filter and issue detail modal.',
     stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'REST API'],
     live: 'https://jobayer07-dev.github.io/GitHub_Issue_Tracker/',
@@ -51,6 +55,7 @@ const projects = [
     id: 'english-janala',
     num: '05',
     name: 'English Janala',
+    image: '/projects/english-janala.svg',
     desc: 'Vocabulary learning app with Web Speech API pronunciation feature and REST API integration.',
     stack: ['JavaScript', 'Web Speech API', 'REST API'],
     live: 'https://jobayer07-dev.github.io/english-janala-project/',
@@ -60,6 +65,7 @@ const projects = [
     id: 'bpl-players',
     num: '06',
     name: 'BPL Players Selection',
+    image: '/projects/bpl-players.svg',
     desc: 'A cricket players selection app with REST API integration, search, and filter functionalities.',
     stack: ['React', 'Tailwind CSS', 'DaisyUI', 'REST API'],
     live: 'https://bpl-players-selection-from-world.netlify.app/',
@@ -69,6 +75,7 @@ const projects = [
     id: 'keen-keeper',
     num: '07',
     name: 'Keen Keeper',
+    image: '/projects/keen-keeper.svg',
     desc: 'Friend relationship manager with React Router v6, Context API and lazy loading.',
     stack: ['React', 'React Router v6', 'Context API', 'DaisyUI'],
     live: 'https://keenkeaper.netlify.app/',
@@ -78,6 +85,7 @@ const projects = [
     id: 'digitools',
     num: '08',
     name: 'DigiTools',
+    image: '/projects/digitools.svg',
     desc: 'React-based digital tools marketplace with cart management, toast notifications and smooth UX.',
     stack: ['React 19', 'Tailwind CSS', 'DaisyUI', 'Vite'],
     live: 'https://jobayer-digitool.netlify.app',
@@ -87,6 +95,7 @@ const projects = [
     id: null,
     num: '09',
     name: 'Coming Soon...',
+    image: '/projects/coming-soon.svg',
     desc: "I'm currently working on a full-stack project using Next.js.",
     stack: ['Next.js', 'MongoDB', 'Auth'],
     live: null,
@@ -112,27 +121,40 @@ export default function ProjectsPage() {
         </h1>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-2 p-6 lg:grid-cols-3 gap-5">
         {projects.map(
-          ({ id, num, name, desc, stack, live, code, upcoming }, i) => (
+          ({ id, num, name, image, desc, stack, live, code, upcoming }, i) => (
             <motion.div
               key={num}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: i * 0.08 }}
-              className={`group relative bg-base-200 rounded-2xl p-6 transition-all duration-300 overflow-hidden flex flex-col ${
+              className={`group relative bg-base-200 rounded-2xl transition-all duration-300 overflow-hidden flex flex-col ${
                 upcoming
                   ? 'border border-dashed border-base-300'
                   : 'border border-base-300 hover:border-[#c8f04e]/25 hover:-translate-y-1'
               }`}
             >
-              <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#c8f04e] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-10" />
 
-              <div className="flex items-center gap-3 text-xs text-base-content/30 tracking-widest mb-5">
-                {num}
-                <div className="flex-1 h-px bg-base-300" />
+              {/* Project image */}
+              <div className="w-full aspect-[16/9] overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={image}
+                  alt={`${name} preview`}
+                  className={`w-full h-full object-cover transition-transform duration-300 ${
+                    upcoming ? 'opacity-60' : 'group-hover:scale-105'
+                  }`}
+                />
               </div>
 
+              <div className="pl-3 flex flex-col flex-1">
+                <div className="flex items-center gap-3 text-xs text-base-content/30 tracking-widest mb-5">
+                  {num}
+                  <div className="flex-1 h-px bg-base-300" />
+                </div>
+              </div>
               <h3
                 className={`font-[family-name:var(--font-syne)] font-bold text-xl mb-2 ${
                   upcoming ? 'text-base-content/40' : ''
