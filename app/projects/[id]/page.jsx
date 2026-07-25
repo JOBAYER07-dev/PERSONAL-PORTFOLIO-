@@ -11,7 +11,7 @@ const projects = [
     num: '01',
     name: 'Construction Client',
     tagline: 'Modern Full-Stack Construction & Building Platform',
-    image: '/constraction.jpg', // 👈 Image Path Added
+    image: '/constraction.jpg',
     desc: 'Construction Client is a full-stack platform designed for construction companies to present their services, showcase completed projects, handle customer inquiries, and streamline project consultations with an intuitive user experience.',
     stack: [
       'Next.js 15',
@@ -22,7 +22,8 @@ const projects = [
       'Framer Motion',
     ],
     live: 'https://constraction-client.vercel.app/',
-    code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_CLIENT',
+    Client_Code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_CLIENT',
+    Server_Code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_SERVER',
     challenges: [
       'Designing an intuitive layout to showcase complex service tiers and construction portfolio items.',
       'Configuring seamless cross-origin request handling (CORS) between client-side Next.js and Express backend API routes.',
@@ -54,7 +55,8 @@ const projects = [
       'Sonner',
     ],
     live: 'https://reez-wear.vercel.app/',
-    code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_CLIENT',
+    Client_Code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_CLIENT',
+    Server_Code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_SERVER',
     challenges: [
       'Implementing role-based access control (RBAC) with Better Auth to separate User and Admin permissions across API routes.',
       "Integrating Google OAuth alongside Email/Password authentication using Better Auth's multi-provider setup.",
@@ -87,7 +89,8 @@ const projects = [
       'imgbb',
     ],
     live: 'https://ticket-bari-client-one.vercel.app/',
-    code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-CLIENT',
+    Client_Code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-CLIENT',
+    Server_Code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-SERVER',
     challenges: [
       'Implementing role-based access control (User, Vendor, Admin) with JWT and secure route protection.',
       'Integrating Stripe Checkout with currency fixed to USD and handling webhook events for payment confirmation.',
@@ -118,7 +121,8 @@ const projects = [
       'DaisyUI',
     ],
     live: 'https://medi-queue-ecru.vercel.app/',
-    code: 'https://github.com/JOBAYER07-dev/-MediQueue',
+    Client_Code: 'https://github.com/JOBAYER07-dev/-MediQueue',
+    Server_Code: 'https://github.com/JOBAYER07-dev/MediQueue_Server',
     challenges: [
       'Configuring Firebase Authentication with JWT for dual-layer security on protected API routes.',
       'Setting up CORS correctly for both local development and Vercel production URLs.',
@@ -148,7 +152,8 @@ const projects = [
       'DaisyUI v5',
     ],
     live: 'https://skill-sphere-sable.vercel.app/',
-    code: 'https://github.com/JOBAYER07-dev/SkillSphere',
+    Client_Code: 'https://github.com/JOBAYER07-dev/SkillSphere',
+    Server_Code: 'https://github.com/JOBAYER07-dev/SkillSphere',
     challenges: [
       'Setting up BetterAuth with Google OAuth in Next.js App Router — handling session cookies and Suspense boundaries for useSearchParams.',
       'Configuring MongoDB Atlas IP whitelist for Vercel serverless deployment.',
@@ -171,7 +176,8 @@ const projects = [
     desc: 'A Vanilla JavaScript application that fetches and displays GitHub repository issues in real time. Features include search, priority tagging, status filtering (open/closed), and a detail modal for each issue — all without any framework.',
     stack: ['HTML5', 'Tailwind CSS', 'Vanilla JavaScript', 'GitHub REST API'],
     live: 'https://jobayer07-dev.github.io/GitHub_Issue_Tracker/',
-    code: 'https://github.com/JOBAYER07-dev/GitHub_Issue_Tracker',
+    Client_Code: 'https://github.com/JOBAYER07-dev/GitHub_Issue_Tracker',
+    Server_Code: 'https://github.com/JOBAYER07-dev/GitHub_Issue_Tracker-Server',
     challenges: [
       'Working with GitHub REST API pagination and rate limiting without a backend proxy.',
       'Building a dynamic search and filter system in pure JavaScript without React state.',
@@ -200,7 +206,8 @@ const projects = [
       'CSS3',
     ],
     live: 'https://jobayer07-dev.github.io/english-janala-project/',
-    code: 'https://github.com/JOBAYER07-dev/english-janala-project',
+    Client_Code: 'https://github.com/JOBAYER07-dev/english-janala-project',
+    Server_Code: 'https://github.com/JOBAYER07-dev/english-janala-project-server',
     challenges: [
       'Integrating the Web Speech API across different browsers with varying support levels.',
       'Handling async REST API calls and gracefully managing loading and error states.',
@@ -222,7 +229,8 @@ const projects = [
     desc: 'A cricket player selection app for the Bangladesh Premier League. Users can browse available players, filter by category, and select their dream team within a coin budget. Features search, filter, and a live coin balance tracker.',
     stack: ['React', 'Tailwind CSS', 'DaisyUI', 'REST API', 'React Toastify'],
     live: 'https://bpl-players-selection-from-world.netlify.app/',
-    code: 'https://github.com/JOBAYER07-dev/bpl-project',
+    Client_Code: 'https://github.com/JOBAYER07-dev/bpl-project',
+    Server_Code: 'https://github.com/JOBAYER07-dev/bpl-project-server',
     challenges: [
       'Managing coin budget state across player selection and deselection actions.',
       'Implementing search and category filter simultaneously without performance issues.',
@@ -250,7 +258,8 @@ const projects = [
       'Tailwind CSS',
     ],
     live: 'https://keenkeaper.netlify.app/',
-    code: 'https://github.com/JOBAYER07-dev/KinKeeper',
+    Client_Code: 'https://github.com/JOBAYER07-dev/KinKeeper',
+    Server_Code: 'https://github.com/JOBAYER07-dev/KinKeeper-Server',
     challenges: [
       'Implementing React Router v6 nested routes with lazy loading for performance optimization.',
       'Managing global state with Context API without prop drilling across deep component trees.',
@@ -272,7 +281,8 @@ const projects = [
     desc: 'DigiTools is a React-based digital tools marketplace where users can browse, add to cart, and purchase digital products. Features include cart management with quantity control, toast notifications for user feedback, and a smooth responsive UI.',
     stack: ['React 19', 'Vite', 'Tailwind CSS', 'DaisyUI', 'React Toastify'],
     live: 'https://jobayer-digitool.netlify.app',
-    code: 'https://github.com/JOBAYER07-dev/DigiTools',
+    Client_Code: 'https://github.com/JOBAYER07-dev/DigiTools',
+    Server_Code: 'https://github.com/JOBAYER07-dev/DigiTools-Server',
     challenges: [
       'Managing cart state with add, remove, and quantity update operations using React hooks.',
       'Ensuring smooth user feedback with toast notifications for every cart interaction.',
@@ -466,12 +476,20 @@ export default function ProjectDetailPage({ params }) {
             </a>
             <div className="h-px bg-base-300" />
             <a
-              href={project.code}
+              href={project.Client_Code}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full text-sm text-base-content/60 hover:text-base-content transition-colors"
             >
-              GitHub Repository <span>↗</span>
+              Client Code <span>↗</span>
+            </a>
+            <a
+              href={project.Server_Code}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between w-full text-sm text-base-content/60 hover:text-base-content transition-colors"
+            >
+              Server Code <span>↗</span>
             </a>
           </div>
         </motion.div>

@@ -18,6 +18,7 @@ const fadeUp = {
 const socials = [
   { label: 'GitHub', href: 'https://github.com/JOBAYER07-dev' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jobayer-dev/' },
+  { label: 'Twitter', href: 'https://x.com/JOBAYER_DEV' },
   { label: 'Facebook', href: 'https://www.facebook.com/jobayer.hosen.juba' },
   { label: 'Instagram', href: 'https://www.instagram.com/jobayer__4' },
 ];
@@ -297,7 +298,7 @@ export default function Hero() {
               Let's Talk →
             </Link>
             <a
-              href="/Jobayer_MERN.pdf"
+              href="/Jobayer_Full_Stack.pdf"
               download
               className="btn rounded-full border border-[#c8f04e] text-[#c8f04e] bg-transparent hover:bg-[#c8f04e]/10 px-8"
             >

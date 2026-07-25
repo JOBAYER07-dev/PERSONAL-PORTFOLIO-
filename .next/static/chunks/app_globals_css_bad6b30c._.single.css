@@ -5478,10 +5478,6 @@
     height: calc(var(--spacing) * 12);
   }
 
-  .h-56 {
-    height: calc(var(--spacing) * 56);
-  }
-
   .h-\[2px\] {
     height: 2px;
   }
@@ -6197,11 +6193,6 @@
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
 
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
-
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -6323,24 +6314,8 @@
     color: #c8f04e;
   }
 
-  .text-\[\#c8f04e\]\/20 {
-    color: rgba(200, 240, 78, .2);
-    color: color(display-p3 .8151 .936516 .413216 / .2);
-    color: lab(89.757% -29.3773 69.7915 / .2);
-  }
-
   .text-base-content {
     color: var(--color-base-content);
-  }
-
-  .text-base-content\/20 {
-    color: var(--color-base-content);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .text-base-content\/20 {
-      color: color-mix(in oklab, var(--color-base-content) 20%, transparent);
-    }
   }
 
   .text-base-content\/30 {
@@ -6915,12 +6890,6 @@
   @media (min-width: 48rem) {
     .md\:hidden {
       display: none;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:h-72 {
-      height: calc(var(--spacing) * 72);
     }
   }
 

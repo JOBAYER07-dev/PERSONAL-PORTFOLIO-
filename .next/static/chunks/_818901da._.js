@@ -78,6 +78,11 @@ const contactLinks = [
         icon: 'WA'
     },
     {
+        label: 'Twitter',
+        href: 'https://twitter.com/YOUR_HANDLE',
+        icon: 'TW'
+    },
+    {
         label: 'GitHub',
         href: 'https://github.com/JOBAYER07-dev',
         icon: 'GH'
@@ -136,7 +141,7 @@ function ContactPage() {
                         children: "Get in touch"
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -145,7 +150,7 @@ function ContactPage() {
                             "Let's Build",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 72,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this),
                             "Something ",
@@ -154,13 +159,13 @@ function ContactPage() {
                                 children: "Great"
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 73,
+                                lineNumber: 74,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 70,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -168,25 +173,25 @@ function ContactPage() {
                         children: "Want to collaborate on a project? Have a job opportunity? Feel free to connect for any reason."
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 75,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex justify-center mb-8",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$CopyEmail$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/app/contact/page.jsx",
-                            lineNumber: 80,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 79,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/contact/page.jsx",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -216,20 +221,20 @@ function ContactPage() {
                                 children: icon
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 99,
+                                lineNumber: 100,
                                 columnNumber: 13
                             }, this),
                             label
                         ]
                     }, label, true, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 92,
+                        lineNumber: 93,
                         columnNumber: 11
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/app/contact/page.jsx",
-                lineNumber: 85,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].form, {
@@ -262,12 +267,12 @@ function ContactPage() {
                                             children: "Name"
                                         }, void 0, false, {
                                             fileName: "[project]/app/contact/page.jsx",
-                                            lineNumber: 117,
+                                            lineNumber: 118,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/contact/page.jsx",
-                                        lineNumber: 116,
+                                        lineNumber: 117,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -278,13 +283,13 @@ function ContactPage() {
                                         className: "input input-bordered w-full bg-base-300 border-base-300 focus:border-[#c8f04e]/50 focus:outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/app/contact/page.jsx",
-                                        lineNumber: 121,
+                                        lineNumber: 122,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 115,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -297,12 +302,12 @@ function ContactPage() {
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/app/contact/page.jsx",
-                                            lineNumber: 131,
+                                            lineNumber: 132,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/contact/page.jsx",
-                                        lineNumber: 130,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -313,19 +318,19 @@ function ContactPage() {
                                         className: "input input-bordered w-full bg-base-300 border-base-300 focus:border-[#c8f04e]/50 focus:outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/app/contact/page.jsx",
-                                        lineNumber: 135,
+                                        lineNumber: 136,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 129,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 114,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -338,12 +343,12 @@ function ContactPage() {
                                     children: "Subject"
                                 }, void 0, false, {
                                     fileName: "[project]/app/contact/page.jsx",
-                                    lineNumber: 147,
+                                    lineNumber: 148,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 146,
+                                lineNumber: 147,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -353,13 +358,13 @@ function ContactPage() {
                                 className: "input input-bordered w-full bg-base-300 border-base-300 focus:border-[#c8f04e]/50 focus:outline-none"
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 151,
+                                lineNumber: 152,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 145,
+                        lineNumber: 146,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -372,12 +377,12 @@ function ContactPage() {
                                     children: "Message"
                                 }, void 0, false, {
                                     fileName: "[project]/app/contact/page.jsx",
-                                    lineNumber: 161,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 160,
+                                lineNumber: 161,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -388,13 +393,13 @@ function ContactPage() {
                                 className: "textarea textarea-bordered w-full bg-base-300 border-base-300 focus:border-[#c8f04e]/50 focus:outline-none resize-none"
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 165,
+                                lineNumber: 166,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 159,
+                        lineNumber: 160,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -405,12 +410,12 @@ function ContactPage() {
                             className: "loading loading-spinner loading-sm"
                         }, void 0, false, {
                             fileName: "[project]/app/contact/page.jsx",
-                            lineNumber: 180,
+                            lineNumber: 181,
                             columnNumber: 13
                         }, this) : 'Send Message →'
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 174,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this),
                     status === 'success' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -418,7 +423,7 @@ function ContactPage() {
                         children: "✓ Message sent! I'll reply shortly."
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 187,
+                        lineNumber: 188,
                         columnNumber: 11
                     }, this),
                     status === 'error' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -426,19 +431,19 @@ function ContactPage() {
                         children: "Something went wrong. Please try again."
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 192,
+                        lineNumber: 193,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/contact/page.jsx",
-                lineNumber: 106,
+                lineNumber: 107,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/contact/page.jsx",
-        lineNumber: 60,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }

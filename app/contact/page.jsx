@@ -16,6 +16,7 @@ const contactLinks = [
   },
   { label: '+880 1861961550', href: 'tel:+8801861961550', icon: '📞' },
   { label: 'WhatsApp', href: 'https://wa.me/8801861961550', icon: 'WA' },
+  { label: 'Twitter', href: 'https://twitter.com/YOUR_HANDLE', icon: 'TW' },
   { label: 'GitHub', href: 'https://github.com/JOBAYER07-dev', icon: 'GH' },
   {
     label: 'LinkedIn',

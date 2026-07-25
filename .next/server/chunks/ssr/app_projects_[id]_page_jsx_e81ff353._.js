@@ -34,7 +34,8 @@ const projects = [
             'Framer Motion'
         ],
         live: 'https://constraction-client.vercel.app/',
-        code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_CLIENT',
+        Client_Code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_CLIENT',
+        Server_Code: 'https://github.com/JOBAYER07-dev/CONSTRACTION_SERVER',
         challenges: [
             'Designing an intuitive layout to showcase complex service tiers and construction portfolio items.',
             'Configuring seamless cross-origin request handling (CORS) between client-side Next.js and Express backend API routes.',
@@ -66,7 +67,8 @@ const projects = [
             'Sonner'
         ],
         live: 'https://reez-wear.vercel.app/',
-        code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_CLIENT',
+        Client_Code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_CLIENT',
+        Server_Code: 'https://github.com/JOBAYER07-dev/REEZ_WEAR_SERVER',
         challenges: [
             'Implementing role-based access control (RBAC) with Better Auth to separate User and Admin permissions across API routes.',
             "Integrating Google OAuth alongside Email/Password authentication using Better Auth's multi-provider setup.",
@@ -99,7 +101,8 @@ const projects = [
             'imgbb'
         ],
         live: 'https://ticket-bari-client-one.vercel.app/',
-        code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-CLIENT',
+        Client_Code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-CLIENT',
+        Server_Code: 'https://github.com/JOBAYER07-dev/TICKET-BARI-SERVER',
         challenges: [
             'Implementing role-based access control (User, Vendor, Admin) with JWT and secure route protection.',
             'Integrating Stripe Checkout with currency fixed to USD and handling webhook events for payment confirmation.',
@@ -130,7 +133,8 @@ const projects = [
             'DaisyUI'
         ],
         live: 'https://medi-queue-ecru.vercel.app/',
-        code: 'https://github.com/JOBAYER07-dev/-MediQueue',
+        Client_Code: 'https://github.com/JOBAYER07-dev/-MediQueue',
+        Server_Code: 'https://github.com/JOBAYER07-dev/MediQueue_Server',
         challenges: [
             'Configuring Firebase Authentication with JWT for dual-layer security on protected API routes.',
             'Setting up CORS correctly for both local development and Vercel production URLs.',
@@ -160,7 +164,8 @@ const projects = [
             'DaisyUI v5'
         ],
         live: 'https://skill-sphere-sable.vercel.app/',
-        code: 'https://github.com/JOBAYER07-dev/SkillSphere',
+        Client_Code: 'https://github.com/JOBAYER07-dev/SkillSphere',
+        Server_Code: 'https://github.com/JOBAYER07-dev/SkillSphere',
         challenges: [
             'Setting up BetterAuth with Google OAuth in Next.js App Router — handling session cookies and Suspense boundaries for useSearchParams.',
             'Configuring MongoDB Atlas IP whitelist for Vercel serverless deployment.',
@@ -188,7 +193,8 @@ const projects = [
             'GitHub REST API'
         ],
         live: 'https://jobayer07-dev.github.io/GitHub_Issue_Tracker/',
-        code: 'https://github.com/JOBAYER07-dev/GitHub_Issue_Tracker',
+        Client_Code: 'https://github.com/JOBAYER07-dev/GitHub_Issue_Tracker',
+        Server_Code: 'https://github.com/JOBAYER07-dev/GitHub_Issue_Tracker-Server',
         challenges: [
             'Working with GitHub REST API pagination and rate limiting without a backend proxy.',
             'Building a dynamic search and filter system in pure JavaScript without React state.',
@@ -217,7 +223,8 @@ const projects = [
             'CSS3'
         ],
         live: 'https://jobayer07-dev.github.io/english-janala-project/',
-        code: 'https://github.com/JOBAYER07-dev/english-janala-project',
+        Client_Code: 'https://github.com/JOBAYER07-dev/english-janala-project',
+        Server_Code: 'https://github.com/JOBAYER07-dev/english-janala-project-server',
         challenges: [
             'Integrating the Web Speech API across different browsers with varying support levels.',
             'Handling async REST API calls and gracefully managing loading and error states.',
@@ -245,7 +252,8 @@ const projects = [
             'React Toastify'
         ],
         live: 'https://bpl-players-selection-from-world.netlify.app/',
-        code: 'https://github.com/JOBAYER07-dev/bpl-project',
+        Client_Code: 'https://github.com/JOBAYER07-dev/bpl-project',
+        Server_Code: 'https://github.com/JOBAYER07-dev/bpl-project-server',
         challenges: [
             'Managing coin budget state across player selection and deselection actions.',
             'Implementing search and category filter simultaneously without performance issues.',
@@ -273,7 +281,8 @@ const projects = [
             'Tailwind CSS'
         ],
         live: 'https://keenkeaper.netlify.app/',
-        code: 'https://github.com/JOBAYER07-dev/KinKeeper',
+        Client_Code: 'https://github.com/JOBAYER07-dev/KinKeeper',
+        Server_Code: 'https://github.com/JOBAYER07-dev/KinKeeper-Server',
         challenges: [
             'Implementing React Router v6 nested routes with lazy loading for performance optimization.',
             'Managing global state with Context API without prop drilling across deep component trees.',
@@ -301,7 +310,8 @@ const projects = [
             'React Toastify'
         ],
         live: 'https://jobayer-digitool.netlify.app',
-        code: 'https://github.com/JOBAYER07-dev/DigiTools',
+        Client_Code: 'https://github.com/JOBAYER07-dev/DigiTools',
+        Server_Code: 'https://github.com/JOBAYER07-dev/DigiTools-Server',
         challenges: [
             'Managing cart state with add, remove, and quantity update operations using React hooks.',
             'Ensuring smooth user feedback with toast notifications for every cart interaction.',
@@ -341,12 +351,12 @@ function ProjectDetailPage({ params }) {
                     children: "← Back to Projects"
                 }, void 0, false, {
                     fileName: "[project]/app/projects/[id]/page.jsx",
-                    lineNumber: 305,
+                    lineNumber: 315,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/projects/[id]/page.jsx",
-                lineNumber: 299,
+                lineNumber: 309,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -371,13 +381,13 @@ function ProjectDetailPage({ params }) {
                                 className: "w-12 h-px bg-base-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 322,
+                                lineNumber: 332,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 320,
+                        lineNumber: 330,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -385,7 +395,7 @@ function ProjectDetailPage({ params }) {
                         children: project.name
                     }, void 0, false, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 324,
+                        lineNumber: 334,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -393,13 +403,13 @@ function ProjectDetailPage({ params }) {
                         children: project.tagline
                     }, void 0, false, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 327,
+                        lineNumber: 337,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/projects/[id]/page.jsx",
-                lineNumber: 314,
+                lineNumber: 324,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -423,7 +433,7 @@ function ProjectDetailPage({ params }) {
                         className: "w-full h-full object-cover object-top"
                     }, void 0, false, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 341,
+                        lineNumber: 351,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -437,7 +447,7 @@ function ProjectDetailPage({ params }) {
                                 children: "Live Site →"
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 349,
+                                lineNumber: 359,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -448,19 +458,19 @@ function ProjectDetailPage({ params }) {
                                 children: "GitHub →"
                             }, void 0, false, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 357,
+                                lineNumber: 367,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 348,
+                        lineNumber: 358,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/projects/[id]/page.jsx",
-                lineNumber: 333,
+                lineNumber: 343,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -488,7 +498,7 @@ function ProjectDetailPage({ params }) {
                                         children: "About the Project"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 377,
+                                        lineNumber: 387,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -496,13 +506,13 @@ function ProjectDetailPage({ params }) {
                                         children: project.desc
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 380,
+                                        lineNumber: 390,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 372,
+                                lineNumber: 382,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -524,7 +534,7 @@ function ProjectDetailPage({ params }) {
                                         children: "Challenges Faced"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 391,
+                                        lineNumber: 401,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -537,25 +547,25 @@ function ProjectDetailPage({ params }) {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                                        lineNumber: 400,
+                                                        lineNumber: 410,
                                                         columnNumber: 19
                                                     }, this),
                                                     c
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                                lineNumber: 396,
+                                                lineNumber: 406,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 394,
+                                        lineNumber: 404,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 386,
+                                lineNumber: 396,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -577,7 +587,7 @@ function ProjectDetailPage({ params }) {
                                         children: "Future Improvements"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 413,
+                                        lineNumber: 423,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -590,31 +600,31 @@ function ProjectDetailPage({ params }) {
                                                         children: "✦"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                                        lineNumber: 422,
+                                                        lineNumber: 432,
                                                         columnNumber: 19
                                                     }, this),
                                                     imp
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                                lineNumber: 418,
+                                                lineNumber: 428,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 416,
+                                        lineNumber: 426,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 408,
+                                lineNumber: 418,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 370,
+                        lineNumber: 380,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -640,7 +650,7 @@ function ProjectDetailPage({ params }) {
                                         children: "Tech Stack"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 439,
+                                        lineNumber: 449,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -650,18 +660,18 @@ function ProjectDetailPage({ params }) {
                                                 children: t
                                             }, t, false, {
                                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                                lineNumber: 444,
+                                                lineNumber: 454,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 442,
+                                        lineNumber: 452,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 438,
+                                lineNumber: 448,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -672,7 +682,7 @@ function ProjectDetailPage({ params }) {
                                         children: "Links"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 456,
+                                        lineNumber: 466,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -686,58 +696,78 @@ function ProjectDetailPage({ params }) {
                                                 children: "↗"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                                lineNumber: 465,
+                                                lineNumber: 475,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 459,
+                                        lineNumber: 469,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "h-px bg-base-300"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 467,
+                                        lineNumber: 477,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: project.code,
+                                        href: project.Client_Code,
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         className: "flex items-center justify-between w-full text-sm text-base-content/60 hover:text-base-content transition-colors",
                                         children: [
-                                            "GitHub Repository ",
+                                            "Client Code ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "↗"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                                lineNumber: 474,
-                                                columnNumber: 33
+                                                lineNumber: 484,
+                                                columnNumber: 27
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/projects/[id]/page.jsx",
-                                        lineNumber: 468,
+                                        lineNumber: 478,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: project.Server_Code,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "flex items-center justify-between w-full text-sm text-base-content/60 hover:text-base-content transition-colors",
+                                        children: [
+                                            "Server Code ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "↗"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/projects/[id]/page.jsx",
+                                                lineNumber: 492,
+                                                columnNumber: 27
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/projects/[id]/page.jsx",
+                                        lineNumber: 486,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projects/[id]/page.jsx",
-                                lineNumber: 455,
+                                lineNumber: 465,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 431,
+                        lineNumber: 441,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/projects/[id]/page.jsx",
-                lineNumber: 368,
+                lineNumber: 378,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -759,7 +789,7 @@ function ProjectDetailPage({ params }) {
                         children: "← All Projects"
                     }, void 0, false, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 487,
+                        lineNumber: 505,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -768,19 +798,19 @@ function ProjectDetailPage({ params }) {
                         children: "Hire Me →"
                     }, void 0, false, {
                         fileName: "[project]/app/projects/[id]/page.jsx",
-                        lineNumber: 490,
+                        lineNumber: 508,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/projects/[id]/page.jsx",
-                lineNumber: 481,
+                lineNumber: 499,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/projects/[id]/page.jsx",
-        lineNumber: 297,
+        lineNumber: 307,
         columnNumber: 5
     }, this);
 }
